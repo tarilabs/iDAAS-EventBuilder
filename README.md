@@ -2,7 +2,7 @@
 iDAAS Event Builder - enabling anyone leveraging the iDAAS platform to be able to build customd POJOs to represent data in the shape and type needed. This componet starts with over 100 POJOs to try and enable developers. 
 
 # Usage
-As of this release we do not yet have a POM release for it to be implemented into other projects easily. This project once downloaded should be implemented iDAAS Components, most commonly added into iDAAS Connect components or iDAAS DREAM.
+As of this release we do not yet have a POM release for it to be implemented into other projects easily. This project once downloaded should be implemented iDAAS Components, most commonly added into iDAAS Connect components or iDAAS DREAM. The intent is to create a POM File as we continue forward.
 
 # POM Files
 This project also contains a POM file to pull in needed third party libraries.
@@ -16,6 +16,6 @@ To package the solution to a single jar:
 
 mvn package
 
-Run the package:
+Build the package for implementationL
 
 java -jar <jarfile.jar>
