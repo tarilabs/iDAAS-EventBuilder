@@ -29,26 +29,28 @@ public class RoutingEventParser {
 		 * Parse Message and build events
 		 */
 		String[] messageSegments = body.split("\r");
-		for (String segmentDetails : messageSegments) {
-			if (segmentDetails.substring(0, 3).equals("MSH")) {
+		for (String segmentData : messageSegments) {
+			if (segmentData.substring(0, 3).equals("MSH")) {
 				// Parse MSH and Populating Parsing Variables
-				mshDelimiterDetails = segmentDetails.substring(3, 4);
-				// Spilt MSH
-				mshSegmentDetails = body.split(mshDelimiterDetails);
+				mshDelimiterDetails = segmentData.substring(3, 4);
+				// Spilt MSH Segment
+				String msgSegment = segmentData;
+				String[] segmentDetails = msgSegment.split("["+mshDelimiterDetails+"]",0);
+				System.out.println("Segment Count"+segmentDetails.length);
 				// Populate into Routing Event
-				routingEvent.setFacilityId(mshDelimiterDetails[2].toString());
+				routingEvent.setSendingApp("");
+				routingEvent.setFacilityId(segmentDetails[2].toString());
 				routingEvent.setMessageEvent("");
 				routingEvent.setMessageType("");
 				routingEvent.setIndustryStd("HL7v2");
-				routingEvent.setMessageDateTime("");
+				routingEvent.setMessageDateTime(segmentDetails[6].toString());
 				routingEvent.setMessageDate("");
 				routingEvent.setMessageHour("");
 				routingEvent.setMessageTime("");
-				routingEvent.setMessageId("");
-				// application + facility + messageType + MessageID
+				routingEvent.setMessageId(segmentDetails[9].toString());
 				routingEvent.setUniqueMessageId("");
-				routingEvent.setMessageVersion("");
-				routingEvent.setSendingApp("");
+				routingEvent.setMessageVersion(segmentDetails[11].toString());
+
 				routingEvent.setMessageData(body);
 			}
 			// end of for loop
