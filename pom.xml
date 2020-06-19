@@ -12,7 +12,7 @@
 	<name>iDAAS Event Builder and Parser</name>
 
 	<dependencies>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 			<version>2.2.0.RELEASE</version>
@@ -61,26 +61,26 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.28</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.8.1</version>
 		</dependency>
 		<!-- HL7 Parser -->
-		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi/hapi-base -->
+		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi/hapi-base
 		<dependency>
 			<groupId>ca.uhn.hapi</groupId>
 			<artifactId>hapi-base</artifactId>
 			<version>2.3</version>
-		</dependency>
+		</dependency>-->
 		<!-- FHIR Parser -->
-		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi.fhir/hapi-fhir-base -->
+		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi.fhir/hapi-fhir-base
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-base</artifactId>
 			<version>4.1.0</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 
 	<repositories>

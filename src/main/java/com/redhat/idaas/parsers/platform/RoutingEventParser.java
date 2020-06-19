@@ -36,7 +36,7 @@ public class RoutingEventParser {
 				// Spilt MSH
 				mshSegmentDetails = body.split(mshDelimiterDetails);
 				// Populate into Routing Event
-				routingEvent.setFacilityId("");
+				routingEvent.setFacilityId(mshDelimiterDetails[2].toString());
 				routingEvent.setMessageEvent("");
 				routingEvent.setMessageType("");
 				routingEvent.setIndustryStd("HL7v2");

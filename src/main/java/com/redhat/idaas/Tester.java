@@ -14,7 +14,7 @@ import ca.uhn.hl7v2.parser.Parser;
 import com.redhat.idaas.parsers.platform.RoutingEventParser;
 import com.redhat.idaas.pojos.platform.*;
 
-public class tester {
+public class Tester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
