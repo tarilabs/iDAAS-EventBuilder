@@ -65,8 +65,8 @@ public class RoutingEventParser {
 				routingEvent.setMessageDate(messageSendingDate);
 				routingEvent.setMessageHour(messageSendingHour);
 				routingEvent.setMessageTime(messageSendingTime);
-				routingEvent.setMessageType(messageTypeData.substring(0,2));
-				routingEvent.setMessageEvent(messageTypeData.substring(4,6));
+				routingEvent.setMessageType(messageTypeData.substring(0,3));
+				routingEvent.setMessageEvent(messageTypeData.substring(4,7));
 				routingEvent.setMessageId(segmentDetails[9].toString());
 				routingEvent.setUniqueMessageId(messageUMID);
 				routingEvent.setMessageVersion(segmentDetails[11].toString());

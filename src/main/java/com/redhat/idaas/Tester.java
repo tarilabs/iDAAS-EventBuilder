@@ -41,23 +41,29 @@ public class Tester {
 		 * return; }
 		 */
 		
+
 		/*
-		
 		com.redhat.idaas.pojos.platform.hl7MessageDelimiters mshDelimiterDetails = new com.redhat.idaas.pojos.platform.hl7MessageDelimiters();
 		mshDelimiterDetails  = com.redhat.idaas.parsers.hl7Segments.generalHL7Parser.generalMessageProcessing(msgBody);				
 		System.out.println("Delimiter Data: " + mshDelimiterDetails.toString()); 
-		
+		*/
+
 		// HL7 MSH Segment
+		/*  Tested 06-29-2020
 		com.redhat.idaas.pojos.clinical.hl7v2.Hl7MessageHeader mshSegmentDetails = new com.redhat.idaas.pojos.clinical.hl7v2.Hl7MessageHeader();
 		mshSegmentDetails = com.redhat.idaas.parsers.hl7Segments.MSHSegment.parseMSHSegment(msgBody);
-		System.out.println("HL7 MSH Segment Data: " + mshDelimiterDetails.toString()); 
+		System.out.println("HL7 MSH Segment Data: " + mshSegmentDetails.toString());
 		*/
 		 
 		// Routing Event
+		/* Tested 06-29-2020
 		RoutingEventParser parser = new RoutingEventParser();
 		RoutingEvent msgRoutingEvent = new RoutingEvent();
 		msgRoutingEvent = parser.buildRoutingEvent(msgBody);
-		System.out.println("HL7 Routing Event: " + msgRoutingEvent.toString()); 
+		System.out.println("HL7 Routing Event: " + msgRoutingEvent.toString());
+		*/
+
+
     } 
 			
 }
