@@ -7,7 +7,7 @@
 
 	<groupId>com.redhat.idaas</groupId>
 	<artifactId>idaas-eventbuilder</artifactId>
-	<version>1.5</version>
+	<version>2020</version>
 	<name>iDAAS Event Builder and Parser</name>
 
 	<properties>
