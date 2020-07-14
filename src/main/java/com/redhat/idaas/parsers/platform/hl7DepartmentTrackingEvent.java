@@ -1,4 +1,4 @@
 package com.redhat.idaas.parsers.platform;
 
-public class DepartmentTrackingEvent {
+public class hl7DepartmentTrackingEvent {
 }

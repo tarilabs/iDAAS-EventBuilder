@@ -1,4 +1,4 @@
 package com.redhat.idaas.parsers.platform;
 
-public class SepsisEvent {
+public class hl7CustomerExperienceEvent {
 }

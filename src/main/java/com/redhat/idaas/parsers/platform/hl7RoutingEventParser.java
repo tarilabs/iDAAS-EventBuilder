@@ -11,9 +11,9 @@ import com.redhat.idaas.pojos.platform.RoutingEvent;
  * @author Alan Scott
  *
  */
-public class RoutingEventParser {
+public class hl7RoutingEventParser {
 
-	public RoutingEventParser() {
+	public hl7RoutingEventParser() {
 
 	}
 
