@@ -47,7 +47,7 @@ public class Tester {
 
 		// HL7 MSH Segment
 		/*  Tested 06-29-2020
-		com.redhat.idaas.pojos.clinical.hl7v2.Hl7MessageHeader mshSegmentDetails = new com.redhat.idaas.pojos.clinical.hl7v2.Hl7MessageHeader();
+		com.redhat.idaas.pojos.clinical.Hl7MessageHeader mshSegmentDetails = new com.redhat.idaas.pojos.clinical.Hl7MessageHeader();
 		mshSegmentDetails = com.redhat.idaas.parsers.hl7Segments.MSHSegment.parseMSHSegment(msgBody);
 		System.out.println("HL7 MSH Segment Data: " + mshSegmentDetails.toString());
 		*/

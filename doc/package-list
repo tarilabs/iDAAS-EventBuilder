@@ -1,5 +1,5 @@
 com.redhat.idaas
-com.redhat.idaas.parsers.hl7Segments
+com.redhat.idaas.parsers.hl7
 com.redhat.idaas.parsers.platform
 com.redhat.idaas.pojos.clinical.fhir
 com.redhat.idaas.pojos.clinical.fhir.frameworks.clinical
