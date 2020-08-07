@@ -15,7 +15,7 @@ package com.redhat.idaas.parsers.hl7;
 //import ca.uhn.hl7v2.parser.Parser;
 
 // Event Builder objects
-import com.redhat.idaas.pojos.clinical.Hl7MessageHeader;
+import com.redhat.idaas.pojos.clinical.messageHeader;
 
 /**
  * @author Alan Scott
@@ -23,9 +23,9 @@ import com.redhat.idaas.pojos.clinical.Hl7MessageHeader;
  */
 public class MSHSegment {
 
-	public static Hl7MessageHeader parseMSHSegment(String msgBody)
+	public static messageHeader parseMSHSegment(String msgBody)
 	{
-		Hl7MessageHeader mshDetails = new Hl7MessageHeader();
+		messageHeader mshDetails = new messageHeader();
 
 		// Delimiters
 		String fieldDelimiter;
