@@ -9,7 +9,7 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
  * @author Developer
  *
  */
-public class HL7Notes {
+public class medicalNotes {
 	
 	  private String commentSetID;
 	  private String commentSource;

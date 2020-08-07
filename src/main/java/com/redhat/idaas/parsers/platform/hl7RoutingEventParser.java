@@ -78,8 +78,8 @@ public class hl7RoutingEventParser {
 		return routingEvent;
 	}
 
-	// public String toString()
-	// {
-	// return ReflectionToStringBuilder.toString(this);
-	// }
+	public String toString()
+	{
+		return ReflectionToStringBuilder.toString(this);
+	}
 }
