@@ -2,7 +2,7 @@ package com.redhat.idaas.pojos.platform;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class socialdeterminants {
+public class socialDeterminants {
     private String sendingApp;
     private String facilityId;
     private String messageDate;
@@ -20,6 +20,7 @@ public class socialdeterminants {
     private String[] reportedproblems;
     private String[] disease;
     private String[] procedures;
+    private String[] patientDemographicsAdditionalInfo;
 
     public String getSendingApp() {
         return sendingApp;
@@ -157,8 +158,15 @@ public class socialdeterminants {
         this.procedures = procedures;
     }
 
+    public void setPatientDemographicsAdditionalInfo(String[] patientDemographicsAdditionalInfo) {
+        this.patientDemographicsAdditionalInfo = patientDemographicsAdditionalInfo; }
+
+    public String[] getPatientDemographicsAdditionalInfo() {
+            return patientDemographicsAdditionalInfo;
+    }
+
     //toString
-    public String toString()
+    public String toString ()
     {
         return ReflectionToStringBuilder.toString(this);
     }

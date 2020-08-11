@@ -18,7 +18,7 @@ package com.redhat.idaas.pojos.platform;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class ClinicalEvent {
+public class clinicalEvent {
 
   private String lastName;
   private String firstName;

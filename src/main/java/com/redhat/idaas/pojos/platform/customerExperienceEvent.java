@@ -3,7 +3,7 @@ package com.redhat.idaas.pojos.platform;
 import com.redhat.idaas.pojos.clinical.*;
 import com.redhat.idaas.pojos.clinical.patientIdentifiers;
 
-public class hl7CustomerExperienceEvent {
+public class customerExperienceEvent {
 
     public messageHeader messageHeader;
     public patientIdentifiers patientIdentifiers;
