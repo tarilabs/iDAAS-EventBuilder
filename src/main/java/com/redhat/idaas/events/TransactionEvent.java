@@ -14,7 +14,7 @@
  * permissions and limitations under the License.
  *
  */
-package com.redhat.idaas.pojos.platform;
+package com.redhat.idaas.events;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 

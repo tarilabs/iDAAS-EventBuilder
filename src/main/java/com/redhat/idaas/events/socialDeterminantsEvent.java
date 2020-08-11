@@ -1,8 +1,8 @@
-package com.redhat.idaas.pojos.platform;
+package com.redhat.idaas.events;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class socialDeterminants {
+public class socialDeterminantsEvent {
     private String sendingApp;
     private String facilityId;
     private String messageDate;

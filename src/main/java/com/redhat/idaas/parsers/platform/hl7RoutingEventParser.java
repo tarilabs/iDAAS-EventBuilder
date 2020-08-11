@@ -5,7 +5,7 @@ package com.redhat.idaas.parsers.platform;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-import com.redhat.idaas.pojos.platform.RoutingEvent;
+import com.redhat.idaas.events.RoutingEvent;
 
 /**
  * @author Alan Scott

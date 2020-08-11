@@ -1,6 +1,6 @@
 package com.redhat.idaas.parsers.platform;
 
-import com.redhat.idaas.pojos.platform.sepsisEvent;
+import com.redhat.idaas.events.sepsisEvent;
 
 public class hl7SepsisEventParser {
 
