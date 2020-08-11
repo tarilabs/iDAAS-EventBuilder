@@ -1,12 +1,10 @@
-/**
- * 
- */
 package com.redhat.idaas.pojos.clinical;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-/**
- * @author Developer
+/*
+ * @author Alan Scott
+ * Designed to enable a clinical trial
  *
  */
 public class clinicalTrials {

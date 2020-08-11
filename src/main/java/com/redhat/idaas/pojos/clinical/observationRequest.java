@@ -1,12 +1,10 @@
-/**
- * 
- */
 package com.redhat.idaas.pojos.clinical;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-/**
- * @author Developer
+/*
+ * 	@author Alan Scott
+ *	An object intended to represent all aspect of a specific observations details
  *
  */
 public class observationRequest {

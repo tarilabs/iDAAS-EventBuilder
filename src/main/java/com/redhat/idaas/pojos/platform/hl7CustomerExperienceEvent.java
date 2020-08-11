@@ -14,8 +14,8 @@ public class hl7CustomerExperienceEvent {
     public observation observation;
     public observationRequest observationRequest;
     public allergies allergies;
-    public HL7Diagnosis hl7Diagnosis;
+    public diagnosis diagnosis;
     public appointmentInformation appointmentInformation;
-    public Hl7Insurance hl7Insurance;
+    public insurance insurance;
 
 }

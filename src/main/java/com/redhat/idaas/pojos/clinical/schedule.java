@@ -13,7 +13,7 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
  * also be further augmented to support additional needs.
  *
  */
-public class HL7Schedule {
+public class schedule {
 	
 	private String sendingApp;
 	private String facilityId;

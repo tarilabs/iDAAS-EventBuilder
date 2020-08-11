@@ -1,16 +1,5 @@
 package com.redhat.idaas;
 
-// HAPI Events
-//import ca.uhn.hl7v2.DefaultHapiContext;
-//import ca.uhn.hl7v2.HL7Exception;
-//import ca.uhn.hl7v2.HapiContext;
-//import ca.uhn.hl7v2.model.Message;
-//import ca.uhn.hl7v2.model.v22.datatype.PN;
-//import ca.uhn.hl7v2.model.v22.message.ADT_A01;
-//import ca.uhn.hl7v2.model.v22.segment.MSH;
-//import ca.uhn.hl7v2.parser.EncodingNotSupportedException;
-//import ca.uhn.hl7v2.parser.Parser;
-
 public class Tester {
 
 	public static void main(String[] args) {
@@ -26,34 +15,31 @@ public class Tester {
 				+ "GT1||0222PL|NOTREAL^BOB^B||STREET^OTHER STREET^CITY^ST^77787|(444)999-3333|(222)777-5555||||MO|111-33-5555||||NOTREAL GILL N|STREET^OTHER STREET^CITY^ST^99999|(111)222-3333"+"\r"
 				+ "IN1||022254P|4558PD|BLUE CROSS|STREET^OTHER STREET^CITY^ST^00990||(333)333-6666||221K|LENIX|||19980515|19990515|||PATIENT01 TEST D||||||||||||||||||02LL|022LP554"+"\r";
 			
-		//pojos.clinical.hl7v2.HL7MessageHeader mshDetails = com.redhat.idaas.parsers.hl7Segments.MSHSegment(msgBody);
 		/*
-		 * https://hapifhir.github.io/hapi-hl7v2/xref/ca/uhn/hl7v2/examples/ExampleParseMessages.html
-		 * HapiContext context = new DefaultHapiContext(); Parser p =
-		 * context.getGenericParser();
-		 * 
-		 * Message hapiMsg; try { // The parse method performs the actual parsing
-		 * hapiMsg = p.parse(msgBody); } catch (EncodingNotSupportedException e) {
-		 * e.printStackTrace(); return; } catch (HL7Exception e) { e.printStackTrace();
-		 * return; }
+		 * hl7MessageDelimiters
+		 * Tested 06-27-2020
 		 */
-		
-
 		/*
 		com.redhat.idaas.pojos.platform.hl7MessageDelimiters mshDelimiterDetails = new com.redhat.idaas.pojos.platform.hl7MessageDelimiters();
 		mshDelimiterDetails  = com.redhat.idaas.parsers.hl7Segments.generalHL7Parser.generalMessageProcessing(msgBody);				
 		System.out.println("Delimiter Data: " + mshDelimiterDetails.toString()); 
 		*/
 
-		// HL7 MSH Segment
-		/*  Tested 06-29-2020
+		/*
+		*  HL7 MSH Segment
+		*  Tested 06-29-2020
+		*/
+		/*
 		com.redhat.idaas.pojos.clinical.Hl7MessageHeader mshSegmentDetails = new com.redhat.idaas.pojos.clinical.Hl7MessageHeader();
 		mshSegmentDetails = com.redhat.idaas.parsers.hl7Segments.MSHSegment.parseMSHSegment(msgBody);
 		System.out.println("HL7 MSH Segment Data: " + mshSegmentDetails.toString());
 		*/
 		 
-		// Routing Event
-		/* Tested 06-29-2020
+		/*
+		 * Routing Event
+		 * Tested 06-29-2000
+		 */
+		/*
 		RoutingEventParser parser = new RoutingEventParser();
 		RoutingEvent msgRoutingEvent = new RoutingEvent();
 		msgRoutingEvent = parser.buildRoutingEvent(msgBody);

@@ -1,14 +1,11 @@
-/**
- * 
- */
 package com.redhat.idaas.pojos.clinical;
+
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-/**
+/*
  * @author Alan Scott
  * 
- * Meant to provide an object to work with that represents the AIP segment in 
- * HL7 and has been augmented to support additional needed attributes. It can 
- * also be further augmented to support additional needs.
+ * Meant to provide an object to work with that represents the
+ * appointment Personal Resource. It has also been enhanced to support additional needed attributes.
  *
  */
 public class appointmentPersonalResource {

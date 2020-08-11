@@ -1,92 +1,109 @@
-/**
- * 
- */
 package com.redhat.idaas.pojos.clinical;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-/**
- * @author Developer
+/*
+ * 	@author Alan Scott
+ *	Designed to represent any item defined as a term. A term is specifically referencial data used by platforms for
+ *  a more detailed understanding of the data. Some examples are race, ethnicity, insurance plans, diagnosis, procedures,
+ *  martial status, etc...
  *
  */
 public class cweTerm {
 
-	private String IdentifierCode;
-	private String TextValue;
-	private String CodingSystemName;
-	private String AlternativeIdentifier;
-	private String CodingSystemVersionId;
-	private String OriginalText;
-	private String CodeLocation;
-	private String CodeType;
+	private String identifierCode;
+	private String textValue;
+	private String codingSystemName;
+	private String alternativeIdentifier;
+	private String codingSystemVersionId;
+	private String originalText;
+	private String codeLocation;
+	private String codeType;
 	private String applicationName;
 	private String organizationName;
+
 	public String getIdentifierCode() {
-		return IdentifierCode;
+		return identifierCode;
 	}
+
 	public void setIdentifierCode(String identifierCode) {
-		IdentifierCode = identifierCode;
+		this.identifierCode = identifierCode;
 	}
+
 	public String getTextValue() {
-		return TextValue;
+		return textValue;
 	}
+
 	public void setTextValue(String textValue) {
-		TextValue = textValue;
+		this.textValue = textValue;
 	}
+
 	public String getCodingSystemName() {
-		return CodingSystemName;
+		return codingSystemName;
 	}
+
 	public void setCodingSystemName(String codingSystemName) {
-		CodingSystemName = codingSystemName;
+		this.codingSystemName = codingSystemName;
 	}
+
 	public String getAlternativeIdentifier() {
-		return AlternativeIdentifier;
+		return alternativeIdentifier;
 	}
+
 	public void setAlternativeIdentifier(String alternativeIdentifier) {
-		AlternativeIdentifier = alternativeIdentifier;
+		this.alternativeIdentifier = alternativeIdentifier;
 	}
+
 	public String getCodingSystemVersionId() {
-		return CodingSystemVersionId;
+		return codingSystemVersionId;
 	}
+
 	public void setCodingSystemVersionId(String codingSystemVersionId) {
-		CodingSystemVersionId = codingSystemVersionId;
+		this.codingSystemVersionId = codingSystemVersionId;
 	}
+
 	public String getOriginalText() {
-		return OriginalText;
+		return originalText;
 	}
+
 	public void setOriginalText(String originalText) {
-		OriginalText = originalText;
+		this.originalText = originalText;
 	}
+
 	public String getCodeLocation() {
-		return CodeLocation;
+		return codeLocation;
 	}
+
 	public void setCodeLocation(String codeLocation) {
-		CodeLocation = codeLocation;
+		this.codeLocation = codeLocation;
 	}
+
 	public String getCodeType() {
-		return CodeType;
+		return codeType;
 	}
+
 	public void setCodeType(String codeType) {
-		CodeType = codeType;
+		this.codeType = codeType;
 	}
+
 	public String getApplicationName() {
 		return applicationName;
 	}
+
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
+
 	public String getOrganizationName() {
 		return organizationName;
 	}
+
 	public void setOrganizationName(String organizationName) {
 		this.organizationName = organizationName;
 	}
-	
-	//toString 
-	public String toString() 
+
+	//toString
+	public String toString()
 	{
 		return ReflectionToStringBuilder.toString(this);
 	}
-
-	
-	
 }

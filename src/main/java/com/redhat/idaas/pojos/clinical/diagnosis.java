@@ -1,15 +1,13 @@
-/**
- * 
- */
 package com.redhat.idaas.pojos.clinical;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-/**
- * @author Developer
+/*
+ * @author Alan Scott
+ * Meant to represent a clinical diagnosis
  *
  */
-public class HL7Diagnosis {
+public class diagnosis {
 
 	private String diagnosisSetId;
 	private String diagnosisCodeMethod;

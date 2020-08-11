@@ -1,16 +1,10 @@
-/**
- * 
- */
 package com.redhat.idaas.pojos.clinical;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-
-/**
+/*
  * @author Alan Scott
  * 
- * Meant to provide an object to work with that represents the Clinical module 
- * and the family history context
- *
+ * Meant to provide an object to work with that represents a family history context
  *
  */
 public class familyHistory {
