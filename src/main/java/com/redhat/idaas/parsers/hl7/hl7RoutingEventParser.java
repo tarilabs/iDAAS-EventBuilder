@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.redhat.idaas.parsers.platform;
+package com.redhat.idaas.parsers.hl7;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 

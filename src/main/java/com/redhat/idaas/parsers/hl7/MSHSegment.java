@@ -1,6 +1,3 @@
-/*
- *
- */
 package com.redhat.idaas.parsers.hl7;
 
 // Event Builder objects
