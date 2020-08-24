@@ -1,6 +1,6 @@
-package com.redhat.idaas.parsers.hl7;
+package com.redhat.idaas.parsers.clinical;
 
-import com.redhat.idaas.events.sepsisEvent;
+import com.redhat.idaas.events.clinical.sepsisEvent;
 
 public class hl7SepsisEventParser {
 

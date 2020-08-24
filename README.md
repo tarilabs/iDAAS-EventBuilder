@@ -1,29 +1,54 @@
 # iDAAS-EventBuilder
-iDAAS Event Builder - enabling anyone leveraging the iDAAS platform to be able to build customd POJOs to represent data in the shape and type needed. This componet starts with over 100 POJOs to try and enable developers. 
+iDAAS EventBuilder is designed to help ANY implementation reshape or transform data.
 
-# Usage
-As of this release we do not yet have a POM release for it to be implemented into other projects easily. This project once downloaded should be implemented iDAAS Components, most commonly added into iDAAS Connect components or iDAAS DREAM. The intent is to create a POM File as we continue forward.
+## iDAAS-EventBuilder Design Concepts
+iDAAS EventBuilder is built on a tiered concept. 
+- Parsers are specific to parsing types of data <br/>
+- Events are structures that are meant to lift up the POJOs and provide them a specific structure. <br/>
+- Pojos are the object meant to be leverage as parsed data structures.
 
-# POM Files
-This project also contains a POM file to pull in needed third party libraries.
+## POM Files
+This project also contains a POM file to pull in needed third party libraries. The needed library
+is for org.apache.commons and it is leveraged to help us return toString() for all the pojos we 
+deliver. 
 
-# Other Contributions within Source
+# Scenario: Integration 
+This repository follows a very common general development based implementation approach. The implementation
+involves you leveraging the Event Builder JAR to enable transformation and reshaping of data in near real time.
 
-Within each component of the platform we wanted to try and ensure to help developers and provide common implementation direction as we get feedback and continue to expand the iDAAS platforms footprint across SIs (Systems Integrators) and organizations.
+## Integration Data Flow Steps
+As of this this publication their is not a POM file implementation yet.
 
-The following common directories can be fond in every solution as materials are available:
+1. You will need to clone the respository.
+2. iDAAS Event Builder can be built through the next step(s).
+3. Add it as a jar into ANY of the iDAAS-Connect or to iDAAS-Dream.
+4. Implement the JAR within the code and needed Pojos as required.
+    
+# Builds
+This section will cover both local and automated builds.
 
-* doc: This directory is built from running the javadoc command to build developer reference material.
+## Local Builds
+Within the code base you can find the local build commands in the /platform-scripts directory
+1.  Run the build-solution.sh script
+It will run the maven commands to build and then package up the solution. The package will use the usual settings
+in the pom.xml file. It pulls the version and concatenates the version to the output jar it builds.
+Additionally, there is a copy statement to remove any specific version, so it outputs idaas-connect-hl7.jar
 
-# Building and Running
-The following commands can be used within ANY numerous components of the solution (when not applicable the components will have specific compile, build and package instructions).
+## Automated Builds
+Automated Builds are going to be done in Azure Pipelines
 
-mvn clean install
+# Ongoing Enhancements
+We maintain all enhancements within the Git Hub portal under the 
+<a href="https://github.com/RedHat-Healthcare/iDAAS-EventBuilder/projects" target="_blank">projects tab</a>
 
-To package the solution to a single jar:
+# Defects/Bugs
+All defects or bugs should be submitted through the Git Hub Portal under the 
+<a href="https://github.com/RedHat-Healthcare/iDAAS-EventBuilder/issues" target="_blank">issues tab</a>
 
-mvn package
+# Chat and Collaboration
+You can always leverage <a href="https://redhathealthcare.zulipchat.com" target="_blank">Red Hat Healthcare's ZuilpChat area</a>
+and find all the specific areas for iDAAS-EventBuilder. We look forward to any feedback!!
 
-Build the package for implementationL
+If you would like to contribute feel free to, contributions are always welcome!!!! 
 
-java -jar <jarfile.jar>
+Happy using and coding....

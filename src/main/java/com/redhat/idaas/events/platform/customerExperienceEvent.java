@@ -1,4 +1,4 @@
-package com.redhat.idaas.events;
+package com.redhat.idaas.events.platform;
 
 import com.redhat.idaas.pojos.clinical.*;
 import com.redhat.idaas.pojos.clinical.patientIdentifiers;

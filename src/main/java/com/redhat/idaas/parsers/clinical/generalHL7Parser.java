@@ -1,7 +1,7 @@
 	/**
  * 
  */
-package com.redhat.idaas.parsers.hl7;
+package com.redhat.idaas.parsers.clinical;
 
 /**
  * @author alscott

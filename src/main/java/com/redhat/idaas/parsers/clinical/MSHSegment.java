@@ -1,24 +1,17 @@
-/**
- * 
- */
-package com.redhat.idaas.parsers.hl7;
+package com.redhat.idaas.parsers.clinical;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-
-import com.redhat.idaas.events.RoutingEvent;
+// Event Builder objects
+import com.redhat.idaas.pojos.clinical.messageHeader;
 
 /**
  * @author Alan Scott
  *
  */
-public class hl7RoutingEventParser {
+public class MSHSegment {
 
-	public hl7RoutingEventParser() {
-
-	}
-
-	public RoutingEvent buildRoutingEvent(String body) {
-		RoutingEvent routingEvent = new RoutingEvent();
+	public static messageHeader parseMSHSegment(String msgBody)
+	{
+		messageHeader mshDetails = new messageHeader();
 
 		// Delimiters
 		String fieldDelimiter;
@@ -34,7 +27,7 @@ public class hl7RoutingEventParser {
 		/*
 		 * Parse Message and build events
 		 */
-		String[] messageSegments = body.split("\r");
+		String[] messageSegments = msgBody.split("\r");
 		for (String segmentData : messageSegments) {
 			if (segmentData.substring(0, 3).equals("MSH")) {
 				// Parse MSH and Populating Parsing Variables
@@ -45,7 +38,7 @@ public class hl7RoutingEventParser {
 				// Spilt MSH Segment
 				String msgSegment = segmentData;
 				String[] segmentDetails = segmentData.split("["+fieldDelimiter+"]",0);
-				System.out.println("Segment Count"+segmentDetails.length);
+				//System.out.println("Segment Count"+segmentDetails.length);
 				// Splitting Routing Data
 				String messageTypeData = segmentDetails[8].toString();
 				//String[] messageTypeDetails = messageTypeData.split("["+componentDelimiter+"]");
@@ -57,29 +50,23 @@ public class hl7RoutingEventParser {
 				// Create UMID ID
 				String messageUMID = segmentDetails[3].toString()+"_"+segmentDetails[2].toString()+"_"+
 						messageTypeData.substring(0,3)+"_"+ segmentDetails[9].toString();
-				// Populate into Routing Event
-				routingEvent.setSendingApp(segmentDetails[2].toString());
-				routingEvent.setFacilityId(segmentDetails[3].toString());
-				routingEvent.setIndustryStd("HL7v2");
-				routingEvent.setMessageDateTime(segmentDetails[6].toString());
-				routingEvent.setMessageDate(messageSendingDate);
-				routingEvent.setMessageHour(messageSendingHour);
-				routingEvent.setMessageTime(messageSendingTime);
-				routingEvent.setMessageType(messageTypeData.substring(0,3));
-				routingEvent.setMessageEvent(messageTypeData.substring(4,7));
-				routingEvent.setMessageId(segmentDetails[9].toString());
-				routingEvent.setUniqueMessageId(messageUMID);
-				routingEvent.setMessageVersion(segmentDetails[11].toString());
-				routingEvent.setMessageData(body);
+				// Populate into MSH
+				mshDetails.setSendingApp(segmentDetails[2].toString());
+				mshDetails.setFacilityId(segmentDetails[3].toString());
+				mshDetails.setMessageDateTime(segmentDetails[6].toString());
+				mshDetails.setMessageDate(messageSendingDate);
+				mshDetails.setMessageHour(messageSendingHour);
+				mshDetails.setMessageTime(messageSendingTime);
+				mshDetails.setMessageType(messageTypeData.substring(0,3));
+				mshDetails.setMessageEvent(messageTypeData.substring(4,7));
+				mshDetails.setMessageId(segmentDetails[9].toString());
+				mshDetails.setUniqueMessageId(messageUMID);
+				mshDetails.setMessageVersion(segmentDetails[11].toString());
+
 			}
 			// end of for loop
 		}
-
-		return routingEvent;
-	}
-
-	public String toString()
-	{
-		return ReflectionToStringBuilder.toString(this);
+		return mshDetails;
+		
 	}
 }
