@@ -1,7 +1,7 @@
 package com.redhat.idaas.eventbuilder.pojos.platform;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import com.redhat.idaas.pojos.clinical.*;
+import com.redhat.idaas.eventbuilder.pojos.clinical.*;
 public class semanticinteroperability {
     private String sendingApp;
     private String facilityId;

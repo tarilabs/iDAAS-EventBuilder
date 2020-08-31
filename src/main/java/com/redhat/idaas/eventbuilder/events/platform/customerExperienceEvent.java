@@ -1,7 +1,7 @@
 package com.redhat.idaas.eventbuilder.events.platform;
 
 import com.redhat.idaas.eventbuilder.pojos.clinical.*;
-import com.redhat.idaas.pojos.clinical.*;
+import com.redhat.idaas.eventbuilder.pojos.clinical.*;
 
 public class customerExperienceEvent {
 

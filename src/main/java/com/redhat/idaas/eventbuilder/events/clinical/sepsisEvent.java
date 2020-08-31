@@ -2,7 +2,6 @@ package com.redhat.idaas.eventbuilder.events.clinical;
 
 
 import com.redhat.idaas.eventbuilder.pojos.clinical.*;
-import com.redhat.idaas.pojos.clinical.*;
 //import com.redhat.idaas.pojos.clinical.patientVisit;
 
 public class sepsisEvent {
