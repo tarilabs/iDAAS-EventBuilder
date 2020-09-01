@@ -2,8 +2,7 @@ package com.redhat.idaas.eventbuilder.parsers.clinical;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.redhat.idaas.parsers.clinical.generalHL7Parser;
-import com.redhat.idaas.pojos.platform.hl7MessageDelimiters;
+import com.redhat.idaas.eventbuilder.pojos.platform.HL7MessageDelimiters;
 
 import org.junit.jupiter.api.Test;
 
@@ -20,7 +19,7 @@ public class GeneralHL7ParserTest {
             + "GT1||0222PL|NOTREAL^BOB^B||STREET^OTHER STREET^CITY^ST^77787|(444)999-3333|(222)777-5555||||MO|111-33-5555||||NOTREAL GILL N|STREET^OTHER STREET^CITY^ST^99999|(111)222-3333\r"
             + "IN1||022254P|4558PD|BLUE CROSS|STREET^OTHER STREET^CITY^ST^00990||(333)333-6666||221K|LENIX|||19980515|19990515|||PATIENT01 TEST D||||||||||||||||||02LL|022LP554\r";
         
-		hl7MessageDelimiters mshDelimiterDetails  = generalHL7Parser.generalMessageProcessing(msgBody);				
+		HL7MessageDelimiters mshDelimiterDetails  = GeneralHL7Parser.generalMessageProcessing(msgBody);				
         
         assertEquals("|", mshDelimiterDetails.getMsgSegmentDelimiter());
         assertEquals("^", mshDelimiterDetails.getMsgComponentDelimiter());

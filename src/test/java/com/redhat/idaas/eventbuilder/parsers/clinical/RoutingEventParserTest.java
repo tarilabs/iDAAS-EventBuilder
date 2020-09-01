@@ -1,10 +1,8 @@
 package com.redhat.idaas.eventbuilder.parsers.clinical;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
 
-import com.redhat.idaas.events.platform.RoutingEvent;
-import com.redhat.idaas.parsers.clinical.hl7RoutingEventParser;
+import com.redhat.idaas.eventbuilder.events.platform.RoutingEvent;
 
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +19,7 @@ public class RoutingEventParserTest {
             + "GT1||0222PL|NOTREAL^BOB^B||STREET^OTHER STREET^CITY^ST^77787|(444)999-3333|(222)777-5555||||MO|111-33-5555||||NOTREAL GILL N|STREET^OTHER STREET^CITY^ST^99999|(111)222-3333\r"
             + "IN1||022254P|4558PD|BLUE CROSS|STREET^OTHER STREET^CITY^ST^00990||(333)333-6666||221K|LENIX|||19980515|19990515|||PATIENT01 TEST D||||||||||||||||||02LL|022LP554\r";
         
-        hl7RoutingEventParser parser = new hl7RoutingEventParser();
+        HL7RoutingEventParser parser = new HL7RoutingEventParser();
         RoutingEvent msgRoutingEvent = parser.buildRoutingEvent(msgBody);
         
         assertEquals("RIH", msgRoutingEvent.getFacilityId());
