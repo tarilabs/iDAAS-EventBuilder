@@ -12,7 +12,8 @@ package com.redhat.idaas.eventbuilder.parsers.clinical;
 public class GeneralHL7Parser {
 
 	/**
-	 * @param args
+	 * @param msgBody - message body to process
+	 * @return HL7MessageDelimiters - data that was processed
 	 */
 	public static HL7MessageDelimiters generalMessageProcessing(String msgBody) {
 	
