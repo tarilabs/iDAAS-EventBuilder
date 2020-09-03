@@ -1,21 +1,17 @@
-/**
- * 
- */
 package com.redhat.idaas.eventbuilder.pojos.platform;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 /**
  * @author Alan Scott
- *  	Designed for data attributes used for message parsing
- *
+ * Designed for data attributes used for message parsing
  */
 public class HL7MessageDelimiters {
-	 String msgSegmentDelimiter;
-	 String msgComponentDelimiter;
-	 String msgFieldRepeaterDelimiter;
-	 String msgFieldDelimiter;
-	 String msgSubComponentDelimiter;
+	String msgSegmentDelimiter;
+	String msgComponentDelimiter;
+	String msgFieldRepeaterDelimiter;
+	String msgFieldDelimiter;
+	String msgSubComponentDelimiter;
 	 
 	 
 	public String getMsgSegmentDelimiter() {
@@ -48,7 +44,7 @@ public class HL7MessageDelimiters {
 	public void setMsgFieldDelimiter(String msgFieldDelimiter) {
 		this.msgFieldDelimiter = msgFieldDelimiter;
 	}
-	//toString 
+
 	public String toString() 
 	{
 		return ReflectionToStringBuilder.toString(this);

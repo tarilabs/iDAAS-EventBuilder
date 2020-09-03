@@ -1,11 +1,8 @@
-	/**
- * 
- */
 package com.redhat.idaas.eventbuilder.parsers.clinical;
 
-    import com.redhat.idaas.eventbuilder.pojos.platform.HL7MessageDelimiters;
+import com.redhat.idaas.eventbuilder.pojos.platform.HL7MessageDelimiters;
 
-    /**
+/**
  * @author alscott
  *
  */
@@ -17,49 +14,26 @@ public class GeneralHL7Parser {
 	 */
 	public static HL7MessageDelimiters generalMessageProcessing(String msgBody) {
 	
-		/*
-		 * 	Object Reference To Populate
-		 */
+		// Object Reference To Populate
 		HL7MessageDelimiters mshDelimiterDetails = new HL7MessageDelimiters();
-		 /*
-		  * 	Variables for Message Parsing
-		 
-		 String msgSegmentDelimiter = null;
-		 String msgComponentDelimiter = null;
-		 String msgFieldRepeaterDelimiter = null;
-		 String msgSubComponentDelimiter = null;
-		  */
 		
-		 /*
-		  * 	Parse Message and build events
-		  */
-		 String[] messageSegments = msgBody.split("\r"); 
-		 System.out.println("Segment Count: " +messageSegments.length);
+		//Parse Message and build events
+		String[] messageSegments = msgBody.split(SegmentConstants.DEFAULT_SEGMENT_DELIMITER); 
+		// System.out.println("Segment Count: " +messageSegments.length);
 		 
-		 /*
-		   *   For each loop to process each segment
-		   *   
-		   */
-	        for (String segmentDetails : messageSegments) 
-	        {
-	        		if (segmentDetails.substring(0,3).equals("MSH"))
-	        		{	
-        				//Parse MSH and Populating Parsing Variables
-						mshDelimiterDetails.setMsgSegmentDelimiter("\r");
-	        			mshDelimiterDetails.setMsgComponentDelimiter(segmentDetails.substring(4,5));
-						mshDelimiterDetails.setMsgFieldRepeaterDelimiter(segmentDetails.substring(6,7));
-						
-						/*
-						assertEquals("\r", mshDelimiterDetails.getMsgSegmentDelimiter());
-        assertEquals("|", mshDelimiterDetails.getMsgFieldDelimiter());
-        assertEquals("^", mshDelimiterDetails.getMsgComponentDelimiter());
-		assertEquals("&", mshDelimiterDetails.getMsgFieldRepeaterDelimiter());
-		*/
-	        		}
-	        		
-	        }
-	        
-	        return mshDelimiterDetails;
+		for (String segmentDetails : messageSegments) 
+		{
+			if (segmentDetails.substring(0,3).equals(SegmentConstants.SEGMENT_TYPE_MSH))
+			{	
+				//Parse MSH and Populating Parsing Variables
+				mshDelimiterDetails.setMsgSegmentDelimiter(SegmentConstants.DEFAULT_SEGMENT_DELIMITER);
+				mshDelimiterDetails.setMsgFieldDelimiter(segmentDetails.substring(3,4));
+				mshDelimiterDetails.setMsgComponentDelimiter(segmentDetails.substring(4,5));
+				mshDelimiterDetails.setMsgFieldRepeaterDelimiter(segmentDetails.substring(7,8));
+			}
+		}
+		
+		return mshDelimiterDetails;
 	}
 
 }

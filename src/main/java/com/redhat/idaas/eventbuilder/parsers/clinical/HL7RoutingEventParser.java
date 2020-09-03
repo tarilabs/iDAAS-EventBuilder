@@ -33,9 +33,9 @@ public class HL7RoutingEventParser {
 		/*
 		 * Parse Message and build events
 		 */
-		String[] messageSegments = body.split("\r");
+		String[] messageSegments = body.split(SegmentConstants.DEFAULT_SEGMENT_DELIMITER);
 		for (String segmentData : messageSegments) {
-			if (segmentData.substring(0, 3).equals("MSH")) {
+			if (segmentData.substring(0, 3).equals(SegmentConstants.SEGMENT_TYPE_MSH)) {
 				// Parse MSH and Populating Parsing Variables
 				fieldDelimiter = segmentData.substring(3, 4);
 				componentDelimiter = segmentData.substring(4, 5);
