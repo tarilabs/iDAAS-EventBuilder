@@ -13,8 +13,9 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 public class HL7MessageDelimiters {
 	 String msgSegmentDelimiter;
 	 String msgComponentDelimiter;
-	 String msgFieldRepeaterDelimiter ;
-	 String msgSubComponentDelimiter ;
+	 String msgFieldRepeaterDelimiter;
+	 String msgFieldDelimiter;
+	 String msgSubComponentDelimiter;
 	 
 	 
 	public String getMsgSegmentDelimiter() {
@@ -41,7 +42,12 @@ public class HL7MessageDelimiters {
 	public void setMsgSubComponentDelimiter(String msgSubComponentDelimiter) {
 		this.msgSubComponentDelimiter = msgSubComponentDelimiter;
 	}
-	
+	public String getMsgFieldDelimiter() {
+		return msgFieldDelimiter;
+	}
+	public void setMsgFieldDelimiter(String msgFieldDelimiter) {
+		this.msgFieldDelimiter = msgFieldDelimiter;
+	}
 	//toString 
 	public String toString() 
 	{

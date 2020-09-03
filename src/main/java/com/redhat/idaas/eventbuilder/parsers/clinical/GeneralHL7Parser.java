@@ -44,11 +44,17 @@ public class GeneralHL7Parser {
 	        {
 	        		if (segmentDetails.substring(0,3).equals("MSH"))
 	        		{	
-        			//Parse MSH and Populating Parsing Variables
-	        			mshDelimiterDetails.setMsgSegmentDelimiter(segmentDetails.substring(3,4));
+        				//Parse MSH and Populating Parsing Variables
+						mshDelimiterDetails.setMsgSegmentDelimiter("\r");
 	        			mshDelimiterDetails.setMsgComponentDelimiter(segmentDetails.substring(4,5));
-	        			mshDelimiterDetails.setMsgFieldRepeaterDelimiter(segmentDetails.substring(6,7));
-	        			mshDelimiterDetails.setMsgSubComponentDelimiter(segmentDetails.substring(8,9));
+						mshDelimiterDetails.setMsgFieldRepeaterDelimiter(segmentDetails.substring(6,7));
+						
+						/*
+						assertEquals("\r", mshDelimiterDetails.getMsgSegmentDelimiter());
+        assertEquals("|", mshDelimiterDetails.getMsgFieldDelimiter());
+        assertEquals("^", mshDelimiterDetails.getMsgComponentDelimiter());
+		assertEquals("&", mshDelimiterDetails.getMsgFieldRepeaterDelimiter());
+		*/
 	        		}
 	        		
 	        }
