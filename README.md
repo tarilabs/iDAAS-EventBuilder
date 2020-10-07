@@ -5,7 +5,7 @@ iDAAS EventBuilder is designed to help ANY implementation build, parse and/or tr
 iDAAS EventBuilder is built on a tiered concept. Here is a visual to help and try and visualize what Event Builder is 
 and how the various parts of Event Builder correlate.
 
-<img src="EventBuilder-Visualized.png" alt="Event Builder Components" width="500" height="600">
+<img src="EventBuilder-Visualized.png" height="325" width="800" alt="Event Builder Components">
 <br/><br/>
 - Builders are to build specific data structures. They build data through events. <br/>
 - Parsers are specific to parsing types of data <br/>
