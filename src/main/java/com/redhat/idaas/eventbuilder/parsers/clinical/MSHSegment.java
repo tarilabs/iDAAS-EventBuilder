@@ -1,7 +1,7 @@
 package com.redhat.idaas.eventbuilder.parsers.clinical;
 
 // Event Builder objects
-import com.redhat.idaas.eventbuilder.pojos.clinical.MessageHeader;
+import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
 
 /**
  * @author Alan Scott

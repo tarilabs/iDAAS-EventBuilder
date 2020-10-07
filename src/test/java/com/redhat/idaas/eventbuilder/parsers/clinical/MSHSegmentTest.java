@@ -3,8 +3,8 @@ package com.redhat.idaas.eventbuilder.parsers.clinical;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-import com.redhat.idaas.eventbuilder.pojos.clinical.MessageHeader;
-//import com.redhat.idaas.eventbuilder.pojos.clinical.MessageHeader;
+import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
+//import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
 
 import org.junit.jupiter.api.Test;
 

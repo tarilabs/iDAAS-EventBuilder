@@ -1,23 +1,21 @@
 package com.redhat.idaas.eventbuilder.events.platform;
 
-import com.redhat.idaas.eventbuilder.pojos.clinical.Allergies;
-import com.redhat.idaas.eventbuilder.pojos.clinical.AppointmentInformation;
-import com.redhat.idaas.eventbuilder.pojos.clinical.Diagnosis;
-import com.redhat.idaas.eventbuilder.pojos.clinical.Insurance;
+import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.*;
+import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.AppointmentInformation;
 import com.redhat.idaas.eventbuilder.pojos.clinical.Location;
-import com.redhat.idaas.eventbuilder.pojos.clinical.MessageHeader;
-import com.redhat.idaas.eventbuilder.pojos.clinical.PharmacyTreatmentOrder;
+import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
+import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.PharmacyTreatmentOrder;
 
 public class CustomerExperienceEvent {
 
     public MessageHeader messageHeader;
-    public com.redhat.idaas.eventbuilder.pojos.clinical.PatientIdentifiers patientIdentifiers;
-    public com.redhat.idaas.eventbuilder.pojos.clinical.PatientVisit patientVisit;
+    public PatientIdentifiers patientIdentifiers;
+    public PatientVisit patientVisit;
     public PharmacyTreatmentOrder pharmacyTreatmentOrder;
     public Location Location;
-    public com.redhat.idaas.eventbuilder.pojos.clinical.OrderControl orderControl;
-    public com.redhat.idaas.eventbuilder.pojos.clinical.Observation observation;
-    public com.redhat.idaas.eventbuilder.pojos.clinical.ObservationRequest observationRequest;
+    public OrderControl orderControl;
+    public Observation observation;
+    public ObservationRequest observationRequest;
     public Allergies allergies;
     public Diagnosis diagnosis;
     public AppointmentInformation appointmentInformation;

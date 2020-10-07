@@ -1,11 +1,16 @@
 # iDAAS-EventBuilder
-iDAAS EventBuilder is designed to help ANY implementation reshape or transform data.
+iDAAS EventBuilder is designed to help ANY implementation build, parse and/or transform data.
 
 ## iDAAS-EventBuilder Design Concepts
-iDAAS EventBuilder is built on a tiered concept. 
+iDAAS EventBuilder is built on a tiered concept. Here is a visual to help and try and visualize what Event Builder is 
+and how the various parts of Event Builder correlate.
+
+<img src="EventBuilder-Visualized.png" alt="Event Builder Components" width="500" height="600">
+<br/><br/>
+- Builders are to build specific data structures. They build data through events. <br/>
 - Parsers are specific to parsing types of data <br/>
 - Events are structures that are meant to lift up the POJOs and provide them a specific structure. <br/>
-- Pojos are the object meant to be leverage as parsed data structures.
+- Pojos are the data object meant to be leveraged for ANY data building or parsing activity.
 
 ## POM Files
 This project also contains a POM file to pull in needed third party libraries. The needed library
@@ -13,16 +18,7 @@ is for org.apache.commons and it is leveraged to help us return toString() for a
 deliver. 
 
 # Scenario: Integration 
-This repository follows a very common general development based implementation approach. The implementation
-involves you leveraging the Event Builder JAR to enable transformation and reshaping of data in near real time.
-
-## Integration Data Flow Steps
-As of this this publication their is not a POM file implementation yet.
-
-1. You will need to clone the respository.
-2. iDAAS Event Builder can be built through the next step(s).
-3. Add it as a jar into ANY of the iDAAS-Connect or to iDAAS-Dream.
-4. Implement the JAR within the code and needed Pojos as required.
+You can leverage this repository once you have cloned the repository locally through a local Maven install.
     
 # Builds
 This section will cover both local and automated builds.
