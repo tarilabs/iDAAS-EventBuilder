@@ -4,8 +4,8 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 public class G21 {
 private String G21_01_AuthorizeDeAuthorizeCode;
 private String G21_02_Date;
-private String G21_03_U.P.C.EANConsumerPackageCode;
-private String G21_04_U.P.C.CaseCode;
+private String G21_03_UPCEANConsumerPackageCode;
+private String G21_04_UPCCaseCode;
 private String G21_05_Pack;
 private String G21_06_UnitPrice;
 private String G21_07_ProductServiceIDQualifier;

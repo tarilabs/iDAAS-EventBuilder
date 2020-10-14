@@ -9,7 +9,7 @@ private String CS_04_ReferenceIdentificationQualifier;
 private String CS_05_ReferenceIdentification;
 private String CS_06_PurchaseOrderNumber;
 private String CS_07_SpecialServicesCode;
-private String CS_08_F.O.B.PointCode;
+private String CS_08_FOBPointCode;
 private String CS_09_PercentageasDecimal;
 private String CS_10_PercentageasDecimal;
 private String CS_11_MonetaryAmount;

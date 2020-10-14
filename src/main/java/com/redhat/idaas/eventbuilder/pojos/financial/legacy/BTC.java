@@ -12,7 +12,7 @@ private String BTC_07_YesNoConditionorResponseCode;
 private String BTC_08_YesNoConditionorResponseCode;
 private String BTC_09_Count;
 private String BTC_10_IdentificationCode;
-private String BTC_11_AssociationofAmericanRailroads(AAR)PoolCode;
+private String BTC_11_AssociationofAmericanRailroadsPoolCode;
 private String BTC_12_IndustryCode;
 public String toString() { return ReflectionToStringBuilder.toString(this);}
 }

@@ -8,7 +8,7 @@ private String G19_03_QuantityDifference;
 private String G19_04_ShipmentOrderStatusCode;
 private String G19_05_PriceReasonCode;
 private String G19_06_TermsExceptionCode;
-private String G19_07_U.P.C.CaseCode;
+private String G19_07_UPCCaseCode;
 private String G19_08_ProductServiceIDQualifier;
 private String G19_09_ProductServiceID;
 public String toString() { return ReflectionToStringBuilder.toString(this);}

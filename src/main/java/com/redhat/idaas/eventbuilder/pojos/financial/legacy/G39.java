@@ -2,7 +2,7 @@ package com.redhat.idaas.eventbuilder.pojos.financial.legacy;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class G39 {
-private String G39_01_U.P.C.CaseCode;
+private String G39_01_UPCCaseCode;
 private String G39_02_ProductServiceIDQualifier;
 private String G39_03_ProductServiceID;
 private String G39_04_SpecialHandlingCode;

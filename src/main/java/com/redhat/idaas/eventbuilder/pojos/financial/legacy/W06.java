@@ -8,7 +8,7 @@ private String W06_03_Date;
 private String W06_04_ShipmentIdentificationNumber;
 private String W06_05_AgentShipmentIDNumber;
 private String W06_06_PurchaseOrderNumber;
-private String W06_07_MasterReference(Link)Number;
+private String W06_07_MasterReferenceLinkNumber;
 private String W06_08_LinkSequenceNumber;
 private String W06_09_SpecialHandlingCode;
 private String W06_10_ShippingDateChangeReasonCode;

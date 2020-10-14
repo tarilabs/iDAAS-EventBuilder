@@ -2,8 +2,8 @@ package com.redhat.idaas.eventbuilder.pojos.financial.legacy;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class G45 {
-private String G45_01_U.P.C.CaseCode;
-private String G45_02_U.P.C.EANConsumerPackageCode;
+private String G45_01_UPCCaseCode;
+private String G45_02_UPCEANConsumerPackageCode;
 private String G45_03_AllowanceorChargeNumber;
 private String G45_04_ExceptionNumber;
 private String G45_05_ProductServiceIDQualifier;

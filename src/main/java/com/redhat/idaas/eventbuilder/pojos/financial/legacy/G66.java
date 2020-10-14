@@ -7,8 +7,8 @@ private String G66_02_TransportationMethodTypeCode;
 private String G66_03_PalletExchangeCode;
 private String G66_04_UnitLoadOptionCode;
 private String G66_05_Routing;
-private String G66_06_F.O.B.PointCode;
-private String G66_07_F.O.B.Point;
+private String G66_06_FOBPointCode;
+private String G66_07_FOBPoint;
 public String toString() { return ReflectionToStringBuilder.toString(this);}
 }
 

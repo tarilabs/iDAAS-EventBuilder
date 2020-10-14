@@ -2,7 +2,7 @@ package com.redhat.idaas.eventbuilder.pojos.financial.legacy;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class ID3 {
-private String ID3_01_U.P.C.CaseCode;
+private String ID3_01_UPCCaseCode;
 private String ID3_02_ProductServiceIDQualifier;
 private String ID3_03_ProductServiceID;
 private String ID3_04_Pack;

@@ -5,7 +5,7 @@ public class G17 {
 private String G17_01_QuantityInvoiced;
 private String G17_02_UnitorBasisforMeasurementCode;
 private String G17_03_ItemListCost;
-private String G17_04_U.P.C.CaseCode;
+private String G17_04_UPCCaseCode;
 private String G17_05_ProductServiceIDQualifier;
 private String G17_06_ProductServiceID;
 private String G17_07_ProductServiceIDQualifier;

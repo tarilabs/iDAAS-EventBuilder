@@ -5,7 +5,7 @@ public class W19 {
 private String W19_01_QuantityorStatusAdjustmentReasonCode;
 private String W19_02_CreditDebitQuantity;
 private String W19_03_UnitorBasisforMeasurementCode;
-private String W19_04_U.P.C.CaseCode;
+private String W19_04_UPCCaseCode;
 private String W19_05_ProductServiceIDQualifier;
 private String W19_06_ProductServiceID;
 private String W19_07_ProductServiceIDQualifier;

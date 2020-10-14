@@ -16,7 +16,7 @@ private String L13_11_Weight;
 private String L13_12_FreeformDescription;
 private String L13_13_ExportExceptionCode;
 private String L13_14_ActionCode;
-private String L13_15_HarborMaintenanceFee(HMF)ExemptionCode;
+private String L13_15_HarborMaintenanceFeeExemptionCode;
 private String L13_16_Amount;
 public String toString() { return ReflectionToStringBuilder.toString(this);}
 }

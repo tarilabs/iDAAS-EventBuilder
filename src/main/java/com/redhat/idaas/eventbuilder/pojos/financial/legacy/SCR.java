@@ -20,7 +20,7 @@ private String SCR_15_RatingSummaryValueCode;
 private String SCR_16_YesNoConditionorResponseCode;
 private String SCR_17_StandardCarrierAlphaCode;
 private String SCR_18_CarTypeCode;
-private String SCR_19_AssociationofAmericanRailroads(AAR)PoolCode;
+private String SCR_19_AssociationofAmericanRailroadsAARPoolCode;
 private String SCR_20_YesNoConditionorResponseCode;
 private String SCR_21_StandardCarrierAlphaCode;
 private String SCR_22_EquipmentInitial;

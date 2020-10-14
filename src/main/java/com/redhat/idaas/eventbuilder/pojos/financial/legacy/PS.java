@@ -11,7 +11,7 @@ private String PS_06_FreightStationAccountingCode;
 private String PS_07_CityName;
 private String PS_08_StateorProvinceCode;
 private String PS_09_Weight;
-private String PS_10_PreCooled(Rule710)Code;
+private String PS_10_PreCooledRule710Code;
 private String PS_11_YesNoConditionorResponseCode;
 private String PS_12_YesNoConditionorResponseCode;
 private String PS_13_YesNoConditionorResponseCode;

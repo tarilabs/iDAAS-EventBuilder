@@ -12,7 +12,7 @@ private String CLP_07_ReferenceIdentification;
 private String CLP_08_FacilityCodeValue;
 private String CLP_09_ClaimFrequencyTypeCode;
 private String CLP_10_PatientStatusCode;
-private String CLP_11_DiagnosisRelatedGroup(DRG)Code;
+private String CLP_11_DiagnosisRelatedGroupDRGCode;
 private String CLP_12_Quantity;
 private String CLP_13_PercentageasDecimal;
 private String CLP_14_YesNoConditionorResponseCode;

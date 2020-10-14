@@ -16,7 +16,7 @@ private String X1_11_LadingValue;
 private String X1_12_ExportFilingKeyCode;
 private String X1_13_UnitorBasisforMeasurementCode;
 private String X1_14_UnitPrice;
-private String X1_15_U.S.GovernmentLicenseType;
+private String X1_15_USGovernmentLicenseType;
 private String X1_16_IdentificationCode;
 private String X1_17_LocationIdentifier;
 public String toString() { return ReflectionToStringBuilder.toString(this);}

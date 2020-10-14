@@ -5,7 +5,7 @@ public class G68 {
 private String G68_01_Quantity;
 private String G68_02_UnitorBasisforMeasurementCode;
 private String G68_03_ItemListCost;
-private String G68_04_U.P.C.CaseCode;
+private String G68_04_UPCCaseCode;
 private String G68_05_ProductServiceIDQualifier;
 private String G68_06_ProductServiceID;
 private String G68_07_ProductServiceIDQualifier;

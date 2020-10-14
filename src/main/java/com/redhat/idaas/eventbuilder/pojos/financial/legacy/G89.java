@@ -5,10 +5,10 @@ public class G89 {
 private String G89_01_DirectStoreDeliverySequenceNumber;
 private String G89_02_Quantity;
 private String G89_03_UnitorBasisforMeasurementCode;
-private String G89_04_U.P.C.EANConsumerPackageCode;
+private String G89_04_UPCEANConsumerPackageCode;
 private String G89_05_ProductServiceIDQualifier;
 private String G89_06_ProductServiceID;
-private String G89_07_U.P.C.CaseCode;
+private String G89_07_UPCCaseCode;
 private String G89_08_ItemListCost;
 private String G89_09_Pack;
 private String G89_10_InnerPack;

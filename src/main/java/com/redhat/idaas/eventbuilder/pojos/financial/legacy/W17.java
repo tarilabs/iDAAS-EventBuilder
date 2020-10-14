@@ -9,7 +9,7 @@ private String W17_04_DepositorOrderNumber;
 private String W17_05_ShipmentIdentificationNumber;
 private String W17_06_TimeQualifier;
 private String W17_07_Time;
-private String W17_08_MasterReference(Link)Number;
+private String W17_08_MasterReferenceNumber;
 private String W17_09_LinkSequenceNumber;
 public String toString() { return ReflectionToStringBuilder.toString(this);}
 }

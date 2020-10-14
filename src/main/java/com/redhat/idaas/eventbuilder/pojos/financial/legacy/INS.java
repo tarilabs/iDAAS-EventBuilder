@@ -7,7 +7,7 @@ private String INS_02_IndividualRelationshipCode;
 private String INS_03_MaintenanceTypeCode;
 private String INS_04_MaintenanceReasonCode;
 private String INS_05_BenefitStatusCode;
-private String INS_07_ConsolidatedOmnibusBudgetReconciliationAct(COBRA)QualifyingEventCode;
+private String INS_07_ConsolidatedOmnibusBudgetReconciliationActCOBRAQualifyingEventCode;
 private String INS_08_EmploymentStatusCode;
 private String INS_09_StudentStatusCode;
 private String INS_10_YesNoConditionorResponseCode;

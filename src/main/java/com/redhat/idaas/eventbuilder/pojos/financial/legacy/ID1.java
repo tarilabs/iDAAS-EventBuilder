@@ -2,7 +2,7 @@ package com.redhat.idaas.eventbuilder.pojos.financial.legacy;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class ID1 {
-private String ID1_01_U.P.C.EANConsumerPackageCode;
+private String ID1_01_UPCEANConsumerPackageCode;
 private String ID1_02_ProductServiceIDQualifier;
 private String ID1_03_ProductServiceID;
 private String ID1_04_FreeformDescription;

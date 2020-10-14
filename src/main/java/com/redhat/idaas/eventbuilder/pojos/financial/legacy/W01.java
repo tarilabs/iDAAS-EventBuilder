@@ -4,7 +4,7 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 public class W01 {
 private String W01_01_Quantity;
 private String W01_02_UnitorBasisforMeasurementCode;
-private String W01_03_U.P.C.CaseCode;
+private String W01_03_UPCCaseCode;
 private String W01_04_ProductServiceIDQualifier;
 private String W01_05_ProductServiceID;
 private String W01_06_ProductServiceIDQualifier;

@@ -5,7 +5,7 @@ public class SAC {
 private String SAC_01_AllowanceorChargeIndicator;
 private String SAC_02_Service,Promotion,Allowance,orChargeCode;
 private String SAC_03_AgencyQualifierCode;
-private String SAC_04_AgencyService,Promotion,Allowance,orChargeCode;
+private String SAC_04_AgencyServicePromotionAllowanceorChargeCode;
 private String SAC_05_Amount;
 private String SAC_06_AllowanceChargePercentQualifier;
 private String SAC_07_Percent,DecimalFormat;

@@ -7,7 +7,7 @@ private String CYC_02_MonthoftheYearCode;
 private String CYC_03_CycleMonthHours;
 private String CYC_04_StandardPointLocationCode;
 private String CYC_05_StandardCarrierAlphaCode;
-private String CYC_06_AssociationofAmericanRailroads(AAR)PoolCode;
+private String CYC_06_AssociationofAmericanRailroadsAARPoolCode;
 public String toString() { return ReflectionToStringBuilder.toString(this);}
 }
 
