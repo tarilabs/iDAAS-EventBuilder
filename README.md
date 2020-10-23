@@ -1,3 +1,5 @@
+![Maven Build status](https://github.com/RedHat-Healthcare/iDAAS-EventBuilder/workflows/Maven%20Build/badge.svg)
+
 # iDAAS-EventBuilder
 iDAAS EventBuilder is designed to help ANY implementation build, parse and/or transform data.
 
