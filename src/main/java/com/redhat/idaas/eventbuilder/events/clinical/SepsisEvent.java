@@ -1,7 +1,7 @@
 package com.redhat.idaas.eventbuilder.events.clinical;
 
 
-import com.redhat.idaas.eventbuilder.pojos.clinical.Location;
+import com.redhat.idaas.eventbuilder.pojos.clinical.fhir.Location;
 import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.MedicalNotes;
 import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.*;
 import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.PharmacyTreatmentOrder;

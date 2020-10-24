@@ -1,4 +1,4 @@
-package com.redhat.idaas.eventbuilder.pojos.edi;
+package com.redhat.idaas.eventbuilder.pojos.edi.fhir;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 /*

@@ -1,4 +1,4 @@
-package com.redhat.idaas.eventbuilder.pojos.clinical;
+package com.redhat.idaas.eventbuilder.pojos.clinical.fhir;
 
 /*
  * https://www.hl7.org/fhir/adverseevent.html

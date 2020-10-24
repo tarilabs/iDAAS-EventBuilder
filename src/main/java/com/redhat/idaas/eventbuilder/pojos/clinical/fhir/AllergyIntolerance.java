@@ -1,4 +1,4 @@
-package com.redhat.idaas.eventbuilder.pojos.clinical;
+package com.redhat.idaas.eventbuilder.pojos.clinical.fhir;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 

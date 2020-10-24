@@ -2,7 +2,7 @@ package com.redhat.idaas.eventbuilder.events.platform;
 
 import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.*;
 import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.AppointmentInformation;
-import com.redhat.idaas.eventbuilder.pojos.clinical.Location;
+import com.redhat.idaas.eventbuilder.pojos.clinical.fhir.Location;
 import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
 import com.redhat.idaas.eventbuilder.pojos.clinical.legacy.PharmacyTreatmentOrder;
 

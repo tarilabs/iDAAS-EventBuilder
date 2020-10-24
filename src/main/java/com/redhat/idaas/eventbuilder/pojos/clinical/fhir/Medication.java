@@ -1,14 +1,14 @@
-package com.redhat.idaas.eventbuilder.pojos.clinical;
+package com.redhat.idaas.eventbuilder.pojos.clinical.fhir;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 /*
  * @author Alan Scott
  * 
- * Meant to provide an object to work with that represents an organization c
+ * Meant to provide an object to work with that represents medication data.
  *
  */
-public class Organization {
+public class Medication {
 
 	//toString 
 	public String toString() 

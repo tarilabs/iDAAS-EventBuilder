@@ -1,17 +1,16 @@
-package com.redhat.idaas.eventbuilder.pojos.clinical;
+package com.redhat.idaas.eventbuilder.pojos.clinical.fhir;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 /*
  * @author Alan Scott
  * 
- * Meant to provide an object to work with that represents the Diagnostics module 
- * and the specimen context of FHIR. It has been augmented to support additional needed attributes. 
+ * Meant to provide an object to work with that represents the a device.
  * It can also be further augmented to support additional needs.
  *
- *
  */
-public class Specimen {
+public class Device {
+
 
 	//toString 
 	public String toString() 
