@@ -4,7 +4,7 @@
 
 	<groupId>com.redhat.idaas</groupId>
 	<artifactId>idaas-eventbuilder</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>iDAAS Event Builder and Parser</name>
 
 	<properties>
@@ -25,7 +25,8 @@
 		<connection>scm:git:${scm.url}.git</connection>
 		<url>${scm.url}</url>
 		<developerConnection>scm:git:${scm.url}.git</developerConnection>
-	</scm>
+	  <tag>v1.0.0</tag>
+  </scm>
 	 
 	<dependencies>
 		<dependency>
