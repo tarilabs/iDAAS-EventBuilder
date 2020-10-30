@@ -6,6 +6,8 @@
 	<artifactId>idaas-eventbuilder</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
 	<name>iDAAS Event Builder and Parser</name>
+	<description>iDAAS EventBuilder is designed to help ANY implementation build, parse and/or transform data.</description>
+	<url>http://connectedhealth-idaas.io/</url>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -21,11 +23,44 @@
 		<scm.url>https://github.com/RedHat-Healthcare/iDAAS-EventBuilder</scm.url>
 	</properties>
 
+	<licenses>
+		<license>
+		  <name>The Apache License, Version 2.0</name>
+		  <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+		  <name>Alan Scott</name>
+		  <email>alscott@redhat.com</email>
+		  <organization>Red Hat</organization>
+		  <organizationUrl>http://www.redhat.com</organizationUrl>
+		</developer>
+		<developer>
+			<name>Jeremy Davis</name>
+			<email>jedavis@redhat.com</email>
+			<organization>Red Hat</organization>
+			<organizationUrl>http://www.redhat.com</organizationUrl>
+		</developer>
+		<developer>
+			<name>Jason Froehlich</name>
+			<email>jfroehlich@redhat.com</email>
+			<organization>Red Hat</organization>
+			<organizationUrl>http://www.redhat.com</organizationUrl>
+		</developer>
+		<developer>
+			<name>Matteo Mortari</name>
+			<email>mmortari@redhat.com</email>
+			<organization>Red Hat</organization>
+			<organizationUrl>http://www.redhat.com</organizationUrl>
+		</developer>
+	</developers>
+
 	<scm>
 		<connection>scm:git:${scm.url}.git</connection>
 		<url>${scm.url}</url>
 		<developerConnection>scm:git:${scm.url}.git</developerConnection>
-	  <tag>HEAD</tag>
   </scm>
 	 
 	<dependencies>
