@@ -4,7 +4,7 @@
 
 	<groupId>com.redhat.idaas</groupId>
 	<artifactId>idaas-eventbuilder</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<name>iDAAS Event Builder and Parser</name>
 	<description>iDAAS EventBuilder is designed to help ANY implementation build, parse and/or transform data.</description>
 	<url>http://connectedhealth-idaas.io/</url>
@@ -20,7 +20,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<surefire-plugin.version>2.22.2</surefire-plugin.version>
 		<junit.jupiter.version>5.6.2</junit.jupiter.version>
-		<scm.url>https://github.com/jayfray12/iDAAS-EventBuilder.git</scm.url>
+		<scm.url>https://github.com/jayfray12/iDAAS-EventBuilder</scm.url>
 	</properties>
 
 	<licenses>
