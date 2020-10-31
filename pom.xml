@@ -4,7 +4,7 @@
 
 	<groupId>com.redhat.idaas</groupId>
 	<artifactId>idaas-eventbuilder</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4-SNAPSHOT</version>
 	<name>iDAAS Event Builder and Parser</name>
 	<description>iDAAS EventBuilder is designed to help ANY implementation build, parse and/or transform data.</description>
 	<url>http://connectedhealth-idaas.io/</url>
@@ -69,7 +69,7 @@
 		<connection>scm:git:${scm.url}.git</connection>
 		<url>${scm.url}</url>
 		<developerConnection>scm:git:${scm.url}.git</developerConnection>
-    <tag>v1.0.3</tag>
+    <tag>v1.0.2</tag>
   </scm>
 	 
 	<dependencies>
