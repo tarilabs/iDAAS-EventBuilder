@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.redhat.idaas</groupId>
+	<groupId>io.connectedhealth-idaas</groupId>
 	<artifactId>idaas-eventbuilder</artifactId>
-	<version>1.0.7-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>iDAAS Event Builder and Parser</name>
 	<description>iDAAS EventBuilder is designed to help ANY implementation build, parse and/or transform data.</description>
 	<url>http://connectedhealth-idaas.io/</url>
@@ -20,7 +20,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<surefire-plugin.version>2.22.2</surefire-plugin.version>
 		<junit.jupiter.version>5.6.2</junit.jupiter.version>
-		<scm.url>https://github.com/jayfray12/iDAAS-EventBuilder</scm.url>
+		<scm.url>https://github.com/RedHat-Healthcare/iDAAS-EventBuilder</scm.url>
 	</properties>
 
 	<licenses>
@@ -31,11 +31,15 @@
 	</licenses>
 
 	<distributionManagement>
+		<snapshotRepository>
+		  <id>ossrh</id>
+		  <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
 		<repository>
-			<id>nexus-releases</id>
-			<url>http://localhost:8081/repository/maven-releases/</url>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
-	</distributionManagement>
+	  </distributionManagement>
 
 	<developers>
 		<developer>
@@ -142,7 +146,8 @@
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.5.1</version>
+						<version>1.6.7</version>
+						<extensions>true</extensions>
 						<executions>
 							<execution>
 								<id>default-deploy</id>
@@ -153,9 +158,9 @@
 							</execution>
 						</executions>
 						<configuration>
-							<serverId>nexus-releases</serverId>
-							<nexusUrl>http://localhost:8081/</nexusUrl>
-							<skipStaging>true</skipStaging>
+							<serverId>ossrh</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>true</autoReleaseAfterClose>
 						</configuration>
 					</plugin>
 					<plugin>
