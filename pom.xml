@@ -20,7 +20,6 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<surefire-plugin.version>2.22.2</surefire-plugin.version>
 		<junit.jupiter.version>5.6.2</junit.jupiter.version>
-		<scm.url>https://github.com/RedHat-Healthcare/iDAAS-EventBuilder</scm.url>
 	</properties>
 
 	<licenses>
@@ -69,11 +68,11 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:${scm.url}.git</connection>
-		<url>${scm.url}</url>
-		<developerConnection>scm:git:${scm.url}.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
+		<connection>scm:git:https://github.com/RedHat-Healthcare/iDAAS-EventBuilder.git</connection>
+		<url>https://github.com/RedHat-Healthcare/iDAAS-EventBuilder</url>
+		<developerConnection>scm:git:https://github.com/RedHat-Healthcare/iDAAS-EventBuilder.git</developerConnection>
+    	<tag>HEAD</tag>
+  	</scm>
 	 
 	<dependencies>
 		<dependency>
