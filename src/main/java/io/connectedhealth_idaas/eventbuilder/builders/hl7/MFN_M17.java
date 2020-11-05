@@ -3,59 +3,59 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class MFN_M17 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public MFI MasterFileIdentification;
-public MFE MasterFileEntry;
-public DMI DRGMasterFileInformation;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private MFI masterFileIdentification;
+    private MFE masterFileEntry;
+    private DMI dRGMasterFileInformation;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public MFI getMasterFileIdentification() {
-        return MasterFileIdentification;
+        return masterFileIdentification;
     }
 
     public void setMasterFileIdentification(MFI masterFileIdentification) {
-        MasterFileIdentification = masterFileIdentification;
+        this.masterFileIdentification = masterFileIdentification;
     }
 
     public MFE getMasterFileEntry() {
-        return MasterFileEntry;
+        return masterFileEntry;
     }
 
     public void setMasterFileEntry(MFE masterFileEntry) {
-        MasterFileEntry = masterFileEntry;
+        this.masterFileEntry = masterFileEntry;
     }
 
-    public DMI getDRGMasterFileInformation() {
-        return DRGMasterFileInformation;
+    public DMI getdRGMasterFileInformation() {
+        return dRGMasterFileInformation;
     }
 
-    public void setDRGMasterFileInformation(DMI DRGMasterFileInformation) {
-        this.DRGMasterFileInformation = DRGMasterFileInformation;
+    public void setdRGMasterFileInformation(DMI dRGMasterFileInformation) {
+        this.dRGMasterFileInformation = dRGMasterFileInformation;
     }
 
     public String toString() {

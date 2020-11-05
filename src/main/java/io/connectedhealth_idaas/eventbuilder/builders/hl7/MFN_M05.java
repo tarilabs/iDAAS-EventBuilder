@@ -3,104 +3,104 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class MFN_M05 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public MFI MasterFileIdentification;
-public MFE MasterFileEntry;
-public LOC LocationIdentification;
-public LCH LocationCharacteristic;
-public LRL LocationRelationship;
-public LDP LocationDepartment;
-public LCH LocationCharacteristic1;
-public LCC LocationChargeCode;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private MFI masterFileIdentification;
+    private MFE masterFileEntry;
+    private LOC locationIdentification;
+    private LCH locationCharacteristic;
+    private LRL locationRelationship;
+    private LDP locationDepartment;
+    private LCH locationCharacteristic1;
+    private LCC locationChargeCode;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public MFI getMasterFileIdentification() {
-        return MasterFileIdentification;
+        return masterFileIdentification;
     }
 
     public void setMasterFileIdentification(MFI masterFileIdentification) {
-        MasterFileIdentification = masterFileIdentification;
+        this.masterFileIdentification = masterFileIdentification;
     }
 
     public MFE getMasterFileEntry() {
-        return MasterFileEntry;
+        return masterFileEntry;
     }
 
     public void setMasterFileEntry(MFE masterFileEntry) {
-        MasterFileEntry = masterFileEntry;
+        this.masterFileEntry = masterFileEntry;
     }
 
     public LOC getLocationIdentification() {
-        return LocationIdentification;
+        return locationIdentification;
     }
 
     public void setLocationIdentification(LOC locationIdentification) {
-        LocationIdentification = locationIdentification;
+        this.locationIdentification = locationIdentification;
     }
 
     public LCH getLocationCharacteristic() {
-        return LocationCharacteristic;
+        return locationCharacteristic;
     }
 
     public void setLocationCharacteristic(LCH locationCharacteristic) {
-        LocationCharacteristic = locationCharacteristic;
+        this.locationCharacteristic = locationCharacteristic;
     }
 
     public LRL getLocationRelationship() {
-        return LocationRelationship;
+        return locationRelationship;
     }
 
     public void setLocationRelationship(LRL locationRelationship) {
-        LocationRelationship = locationRelationship;
+        this.locationRelationship = locationRelationship;
     }
 
     public LDP getLocationDepartment() {
-        return LocationDepartment;
+        return locationDepartment;
     }
 
     public void setLocationDepartment(LDP locationDepartment) {
-        LocationDepartment = locationDepartment;
+        this.locationDepartment = locationDepartment;
     }
 
     public LCH getLocationCharacteristic1() {
-        return LocationCharacteristic1;
+        return locationCharacteristic1;
     }
 
     public void setLocationCharacteristic1(LCH locationCharacteristic1) {
-        LocationCharacteristic1 = locationCharacteristic1;
+        this.locationCharacteristic1 = locationCharacteristic1;
     }
 
     public LCC getLocationChargeCode() {
-        return LocationChargeCode;
+        return locationChargeCode;
     }
 
     public void setLocationChargeCode(LCC locationChargeCode) {
-        LocationChargeCode = locationChargeCode;
+        this.locationChargeCode = locationChargeCode;
     }
 
     public String toString() {

@@ -3,140 +3,140 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class ORM_O01 {
-    public MSH MessageHeader;
-    public NTE NotesandComments;
-    public PID PatientIdentification;
-    public PD1 PatientAdditionalDemographic;
-    public NTE NotesandComments1;
-    public PV1 PatientVisit;
-    public PV2 PatientVisitAdditionalInformation;
-    public IN1 Insurance;
-    public IN2 InsuranceAdditionalInformation;
-    public IN3 InsuranceAdditionalInformationCertification;
-    public GT1 Guarantor;
-    public AL1 PatientAllergyInformation;
-    public ORC CommonOrder;
-    public CTI ClinicalTrialIdentification;
-    public BLG Billing;
+    public MSH messageHeader;
+    public NTE notesandComments;
+    public PID patientIdentification;
+    public PD1 patientAdditionalDemographic;
+    public NTE notesandComments1;
+    public PV1 patientVisit;
+    public PV2 patientVisitAdditionalInformation;
+    public IN1 insurance;
+    public IN2 insuranceAdditionalInformation;
+    public IN3 insuranceAdditionalInformationCertification;
+    public GT1 guarantor;
+    public AL1 patientAllergyInformation;
+    public ORC commonOrder;
+    public CTI clinicalTrialIdentification;
+    public BLG billing;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public NTE getNotesandComments() {
-        return NotesandComments;
+        return notesandComments;
     }
 
     public void setNotesandComments(NTE notesandComments) {
-        NotesandComments = notesandComments;
+        this.notesandComments = notesandComments;
     }
 
     public PID getPatientIdentification() {
-        return PatientIdentification;
+        return patientIdentification;
     }
 
     public void setPatientIdentification(PID patientIdentification) {
-        PatientIdentification = patientIdentification;
+        this.patientIdentification = patientIdentification;
     }
 
     public PD1 getPatientAdditionalDemographic() {
-        return PatientAdditionalDemographic;
+        return patientAdditionalDemographic;
     }
 
     public void setPatientAdditionalDemographic(PD1 patientAdditionalDemographic) {
-        PatientAdditionalDemographic = patientAdditionalDemographic;
+        this.patientAdditionalDemographic = patientAdditionalDemographic;
     }
 
     public NTE getNotesandComments1() {
-        return NotesandComments1;
+        return notesandComments1;
     }
 
     public void setNotesandComments1(NTE notesandComments1) {
-        NotesandComments1 = notesandComments1;
+        this.notesandComments1 = notesandComments1;
     }
 
     public PV1 getPatientVisit() {
-        return PatientVisit;
+        return patientVisit;
     }
 
     public void setPatientVisit(PV1 patientVisit) {
-        PatientVisit = patientVisit;
+        this.patientVisit = patientVisit;
     }
 
     public PV2 getPatientVisitAdditionalInformation() {
-        return PatientVisitAdditionalInformation;
+        return patientVisitAdditionalInformation;
     }
 
     public void setPatientVisitAdditionalInformation(PV2 patientVisitAdditionalInformation) {
-        PatientVisitAdditionalInformation = patientVisitAdditionalInformation;
+        this.patientVisitAdditionalInformation = patientVisitAdditionalInformation;
     }
 
     public IN1 getInsurance() {
-        return Insurance;
+        return insurance;
     }
 
     public void setInsurance(IN1 insurance) {
-        Insurance = insurance;
+        this.insurance = insurance;
     }
 
     public IN2 getInsuranceAdditionalInformation() {
-        return InsuranceAdditionalInformation;
+        return insuranceAdditionalInformation;
     }
 
     public void setInsuranceAdditionalInformation(IN2 insuranceAdditionalInformation) {
-        InsuranceAdditionalInformation = insuranceAdditionalInformation;
+        this.insuranceAdditionalInformation = insuranceAdditionalInformation;
     }
 
     public IN3 getInsuranceAdditionalInformationCertification() {
-        return InsuranceAdditionalInformationCertification;
+        return insuranceAdditionalInformationCertification;
     }
 
     public void setInsuranceAdditionalInformationCertification(IN3 insuranceAdditionalInformationCertification) {
-        InsuranceAdditionalInformationCertification = insuranceAdditionalInformationCertification;
+        this.insuranceAdditionalInformationCertification = insuranceAdditionalInformationCertification;
     }
 
     public GT1 getGuarantor() {
-        return Guarantor;
+        return guarantor;
     }
 
     public void setGuarantor(GT1 guarantor) {
-        Guarantor = guarantor;
+        this.guarantor = guarantor;
     }
 
     public AL1 getPatientAllergyInformation() {
-        return PatientAllergyInformation;
+        return patientAllergyInformation;
     }
 
     public void setPatientAllergyInformation(AL1 patientAllergyInformation) {
-        PatientAllergyInformation = patientAllergyInformation;
+        this.patientAllergyInformation = patientAllergyInformation;
     }
 
     public ORC getCommonOrder() {
-        return CommonOrder;
+        return commonOrder;
     }
 
     public void setCommonOrder(ORC commonOrder) {
-        CommonOrder = commonOrder;
+        this.commonOrder = commonOrder;
     }
 
     public CTI getClinicalTrialIdentification() {
-        return ClinicalTrialIdentification;
+        return clinicalTrialIdentification;
     }
 
     public void setClinicalTrialIdentification(CTI clinicalTrialIdentification) {
-        ClinicalTrialIdentification = clinicalTrialIdentification;
+        this.clinicalTrialIdentification = clinicalTrialIdentification;
     }
 
     public BLG getBilling() {
-        return Billing;
+        return billing;
     }
 
     public void setBilling(BLG billing) {
-        Billing = billing;
+        this.billing = billing;
     }
 
     public String toString() {

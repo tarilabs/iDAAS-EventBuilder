@@ -3,122 +3,122 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class MFN_M02 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public MFI MasterFileIdentification;
-public MFE MasterFileEntry;
-public STF StaffIdentification;
-public PRA PractitionerDetail;
-public ORG PractitionerOrganizationUnit;
-public AFF ProfessionalAffiliation;
-public LAN LanguageDetail;
-public EDU EducationalDetail;
-public CER CertificateDetail;
-public NTE NotesandComments;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private MFI masterFileIdentification;
+    private MFE masterFileEntry;
+    private STF staffIdentification;
+    private PRA practitionerDetail;
+    private ORG practitionerOrganizationUnit;
+    private AFF professionalAffiliation;
+    private LAN languageDetail;
+    private EDU educationalDetail;
+    private CER certificateDetail;
+    private NTE notesandComments;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public MFI getMasterFileIdentification() {
-        return MasterFileIdentification;
+        return masterFileIdentification;
     }
 
     public void setMasterFileIdentification(MFI masterFileIdentification) {
-        MasterFileIdentification = masterFileIdentification;
+        this.masterFileIdentification = masterFileIdentification;
     }
 
     public MFE getMasterFileEntry() {
-        return MasterFileEntry;
+        return masterFileEntry;
     }
 
     public void setMasterFileEntry(MFE masterFileEntry) {
-        MasterFileEntry = masterFileEntry;
+        this.masterFileEntry = masterFileEntry;
     }
 
     public STF getStaffIdentification() {
-        return StaffIdentification;
+        return staffIdentification;
     }
 
     public void setStaffIdentification(STF staffIdentification) {
-        StaffIdentification = staffIdentification;
+        this.staffIdentification = staffIdentification;
     }
 
     public PRA getPractitionerDetail() {
-        return PractitionerDetail;
+        return practitionerDetail;
     }
 
     public void setPractitionerDetail(PRA practitionerDetail) {
-        PractitionerDetail = practitionerDetail;
+        this.practitionerDetail = practitionerDetail;
     }
 
     public ORG getPractitionerOrganizationUnit() {
-        return PractitionerOrganizationUnit;
+        return practitionerOrganizationUnit;
     }
 
     public void setPractitionerOrganizationUnit(ORG practitionerOrganizationUnit) {
-        PractitionerOrganizationUnit = practitionerOrganizationUnit;
+        this.practitionerOrganizationUnit = practitionerOrganizationUnit;
     }
 
     public AFF getProfessionalAffiliation() {
-        return ProfessionalAffiliation;
+        return professionalAffiliation;
     }
 
     public void setProfessionalAffiliation(AFF professionalAffiliation) {
-        ProfessionalAffiliation = professionalAffiliation;
+        this.professionalAffiliation = professionalAffiliation;
     }
 
     public LAN getLanguageDetail() {
-        return LanguageDetail;
+        return languageDetail;
     }
 
     public void setLanguageDetail(LAN languageDetail) {
-        LanguageDetail = languageDetail;
+        this.languageDetail = languageDetail;
     }
 
     public EDU getEducationalDetail() {
-        return EducationalDetail;
+        return educationalDetail;
     }
 
     public void setEducationalDetail(EDU educationalDetail) {
-        EducationalDetail = educationalDetail;
+        this.educationalDetail = educationalDetail;
     }
 
     public CER getCertificateDetail() {
-        return CertificateDetail;
+        return certificateDetail;
     }
 
     public void setCertificateDetail(CER certificateDetail) {
-        CertificateDetail = certificateDetail;
+        this.certificateDetail = certificateDetail;
     }
 
     public NTE getNotesandComments() {
-        return NotesandComments;
+        return notesandComments;
     }
 
     public void setNotesandComments(NTE notesandComments) {
-        NotesandComments = notesandComments;
+        this.notesandComments = notesandComments;
     }
 
     public String toString() {

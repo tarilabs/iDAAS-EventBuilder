@@ -3,95 +3,95 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class MFN_M11 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public MFI MasterFileIdentification;
-public MFE MasterFileEntry;
-public OM1 GeneralSegment;
-public OMC SupportingClinicalInformation;
-public PRT ParticipationInformation;
-public OM6 ObservationsthatareCalculatedfromOtherObservations;
-public OM2 NumericObservation;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private MFI masterFileIdentification;
+    private MFE masterFileEntry;
+    private OM1 generalSegment;
+    private OMC supportingClinicalInformation;
+    private PRT participationInformation;
+    private OM6 observationsthatareCalculatedfromOtherObservations;
+    private OM2 numericObservation;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public MFI getMasterFileIdentification() {
-        return MasterFileIdentification;
+        return masterFileIdentification;
     }
 
     public void setMasterFileIdentification(MFI masterFileIdentification) {
-        MasterFileIdentification = masterFileIdentification;
+        this.masterFileIdentification = masterFileIdentification;
     }
 
     public MFE getMasterFileEntry() {
-        return MasterFileEntry;
+        return masterFileEntry;
     }
 
     public void setMasterFileEntry(MFE masterFileEntry) {
-        MasterFileEntry = masterFileEntry;
+        this.masterFileEntry = masterFileEntry;
     }
 
     public OM1 getGeneralSegment() {
-        return GeneralSegment;
+        return generalSegment;
     }
 
     public void setGeneralSegment(OM1 generalSegment) {
-        GeneralSegment = generalSegment;
+        this.generalSegment = generalSegment;
     }
 
     public OMC getSupportingClinicalInformation() {
-        return SupportingClinicalInformation;
+        return supportingClinicalInformation;
     }
 
     public void setSupportingClinicalInformation(OMC supportingClinicalInformation) {
-        SupportingClinicalInformation = supportingClinicalInformation;
+        this.supportingClinicalInformation = supportingClinicalInformation;
     }
 
     public PRT getParticipationInformation() {
-        return ParticipationInformation;
+        return participationInformation;
     }
 
     public void setParticipationInformation(PRT participationInformation) {
-        ParticipationInformation = participationInformation;
+        this.participationInformation = participationInformation;
     }
 
     public OM6 getObservationsthatareCalculatedfromOtherObservations() {
-        return ObservationsthatareCalculatedfromOtherObservations;
+        return observationsthatareCalculatedfromOtherObservations;
     }
 
     public void setObservationsthatareCalculatedfromOtherObservations(OM6 observationsthatareCalculatedfromOtherObservations) {
-        ObservationsthatareCalculatedfromOtherObservations = observationsthatareCalculatedfromOtherObservations;
+        this.observationsthatareCalculatedfromOtherObservations = observationsthatareCalculatedfromOtherObservations;
     }
 
     public OM2 getNumericObservation() {
-        return NumericObservation;
+        return numericObservation;
     }
 
     public void setNumericObservation(OM2 numericObservation) {
-        NumericObservation = numericObservation;
+        this.numericObservation = numericObservation;
     }
 
     public String toString() {

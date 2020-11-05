@@ -3,77 +3,77 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class MFN_M06 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public MFI MasterFileIdentification;
-public MFE MasterFileEntry;
-public CM0 ClinicalStudyMaster;
-public CM1 ClinicalStudyPhaseMaster;
-public CM2 ClinicalStudyScheduleMaster;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private MFI masterFileIdentification;
+    private MFE masterFileEntry;
+    private CM0 clinicalStudyMaster;
+    private CM1 clinicalStudyPhaseMaster;
+    private CM2 clinicalStudyScheduleMaster;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public MFI getMasterFileIdentification() {
-        return MasterFileIdentification;
+        return masterFileIdentification;
     }
 
     public void setMasterFileIdentification(MFI masterFileIdentification) {
-        MasterFileIdentification = masterFileIdentification;
+        this.masterFileIdentification = masterFileIdentification;
     }
 
     public MFE getMasterFileEntry() {
-        return MasterFileEntry;
+        return masterFileEntry;
     }
 
     public void setMasterFileEntry(MFE masterFileEntry) {
-        MasterFileEntry = masterFileEntry;
+        this.masterFileEntry = masterFileEntry;
     }
 
     public CM0 getClinicalStudyMaster() {
-        return ClinicalStudyMaster;
+        return clinicalStudyMaster;
     }
 
     public void setClinicalStudyMaster(CM0 clinicalStudyMaster) {
-        ClinicalStudyMaster = clinicalStudyMaster;
+        this.clinicalStudyMaster = clinicalStudyMaster;
     }
 
     public CM1 getClinicalStudyPhaseMaster() {
-        return ClinicalStudyPhaseMaster;
+        return clinicalStudyPhaseMaster;
     }
 
     public void setClinicalStudyPhaseMaster(CM1 clinicalStudyPhaseMaster) {
-        ClinicalStudyPhaseMaster = clinicalStudyPhaseMaster;
+        this.clinicalStudyPhaseMaster = clinicalStudyPhaseMaster;
     }
 
     public CM2 getClinicalStudyScheduleMaster() {
-        return ClinicalStudyScheduleMaster;
+        return clinicalStudyScheduleMaster;
     }
 
     public void setClinicalStudyScheduleMaster(CM2 clinicalStudyScheduleMaster) {
-        ClinicalStudyScheduleMaster = clinicalStudyScheduleMaster;
+        this.clinicalStudyScheduleMaster = clinicalStudyScheduleMaster;
     }
 
     public String toString() {

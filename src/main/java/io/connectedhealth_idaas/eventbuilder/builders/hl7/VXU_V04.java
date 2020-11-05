@@ -3,195 +3,241 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class VXU_V04 {
-
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public PID PatientIdentification;
-public PD1 PatientAdditionalDemographic;
-public NK1 NextofKinAssociatedParties;
-public ARV AccessRestriction;
-public PV1 PatientVisit;
-public PV2 PatientVisitAdditionalInformation;
-public GT1 Guarantor;
-public IN1 Insurance;
-public IN2 InsuranceAdditionalInformation;
-public IN3 InsuranceAdditionalInformationCertification;
-public OBX ObservationResult;
-public PRT ParticipationInformation;
-public NTE NotesandComments;
-public ORC CommonOrder;
-public TQ1 TimingQuantity;
-public TQ2 TimingQuantityRelationship;
-public RXA PharmacyTreatmentAdministration;
-public RXR PharmacyTreatmentRoute;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private PID patientIdentification;
+    private PD1 patientAdditionalDemographic;
+    private NK1 nextofKinAssociatedParties;
+    private ARV accessRestriction;
+    private PV1 patientVisit;
+    private PV2 patientVisitAdditionalInformation;
+    private ARV accessRestriction1;
+    private GT1 guarantor;
+    private IN1 insurance;
+    private IN2 insuranceAdditionalInformation;
+    private IN3 insuranceAdditionalInformationCertification;
+    private OBX observationResult;
+    private PRT participationInformation;
+    private NTE notesandComments;
+    private ORC commonOrder;
+    private PRT participationInformation1;
+    private TQ1 timingQuantity;
+    private TQ2 timingQuantityRelationship;
+    private RXA pharmacyTreatmentAdministration;
+    private RXR pharmacyTreatmentRoute;
+    private OBX observationResult1;
+    private PRT participationInformation2;
+    private NTE notesandComments2;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public PID getPatientIdentification() {
-        return PatientIdentification;
+        return patientIdentification;
     }
 
     public void setPatientIdentification(PID patientIdentification) {
-        PatientIdentification = patientIdentification;
+        this.patientIdentification = patientIdentification;
     }
 
     public PD1 getPatientAdditionalDemographic() {
-        return PatientAdditionalDemographic;
+        return patientAdditionalDemographic;
     }
 
     public void setPatientAdditionalDemographic(PD1 patientAdditionalDemographic) {
-        PatientAdditionalDemographic = patientAdditionalDemographic;
+        this.patientAdditionalDemographic = patientAdditionalDemographic;
     }
 
     public NK1 getNextofKinAssociatedParties() {
-        return NextofKinAssociatedParties;
+        return nextofKinAssociatedParties;
     }
 
     public void setNextofKinAssociatedParties(NK1 nextofKinAssociatedParties) {
-        NextofKinAssociatedParties = nextofKinAssociatedParties;
+        this.nextofKinAssociatedParties = nextofKinAssociatedParties;
     }
 
     public ARV getAccessRestriction() {
-        return AccessRestriction;
+        return accessRestriction;
     }
 
     public void setAccessRestriction(ARV accessRestriction) {
-        AccessRestriction = accessRestriction;
+        this.accessRestriction = accessRestriction;
     }
 
     public PV1 getPatientVisit() {
-        return PatientVisit;
+        return patientVisit;
     }
 
     public void setPatientVisit(PV1 patientVisit) {
-        PatientVisit = patientVisit;
+        this.patientVisit = patientVisit;
     }
 
     public PV2 getPatientVisitAdditionalInformation() {
-        return PatientVisitAdditionalInformation;
+        return patientVisitAdditionalInformation;
     }
 
     public void setPatientVisitAdditionalInformation(PV2 patientVisitAdditionalInformation) {
-        PatientVisitAdditionalInformation = patientVisitAdditionalInformation;
+        this.patientVisitAdditionalInformation = patientVisitAdditionalInformation;
+    }
+
+    public ARV getAccessRestriction1() {
+        return accessRestriction1;
+    }
+
+    public void setAccessRestriction1(ARV accessRestriction1) {
+        this.accessRestriction1 = accessRestriction1;
     }
 
     public GT1 getGuarantor() {
-        return Guarantor;
+        return guarantor;
     }
 
     public void setGuarantor(GT1 guarantor) {
-        Guarantor = guarantor;
+        this.guarantor = guarantor;
     }
 
     public IN1 getInsurance() {
-        return Insurance;
+        return insurance;
     }
 
     public void setInsurance(IN1 insurance) {
-        Insurance = insurance;
+        this.insurance = insurance;
     }
 
     public IN2 getInsuranceAdditionalInformation() {
-        return InsuranceAdditionalInformation;
+        return insuranceAdditionalInformation;
     }
 
     public void setInsuranceAdditionalInformation(IN2 insuranceAdditionalInformation) {
-        InsuranceAdditionalInformation = insuranceAdditionalInformation;
+        this.insuranceAdditionalInformation = insuranceAdditionalInformation;
     }
 
     public IN3 getInsuranceAdditionalInformationCertification() {
-        return InsuranceAdditionalInformationCertification;
+        return insuranceAdditionalInformationCertification;
     }
 
     public void setInsuranceAdditionalInformationCertification(IN3 insuranceAdditionalInformationCertification) {
-        InsuranceAdditionalInformationCertification = insuranceAdditionalInformationCertification;
+        this.insuranceAdditionalInformationCertification = insuranceAdditionalInformationCertification;
     }
 
     public OBX getObservationResult() {
-        return ObservationResult;
+        return observationResult;
     }
 
     public void setObservationResult(OBX observationResult) {
-        ObservationResult = observationResult;
+        this.observationResult = observationResult;
     }
 
     public PRT getParticipationInformation() {
-        return ParticipationInformation;
+        return participationInformation;
     }
 
     public void setParticipationInformation(PRT participationInformation) {
-        ParticipationInformation = participationInformation;
+        this.participationInformation = participationInformation;
     }
 
     public NTE getNotesandComments() {
-        return NotesandComments;
+        return notesandComments;
     }
 
     public void setNotesandComments(NTE notesandComments) {
-        NotesandComments = notesandComments;
+        this.notesandComments = notesandComments;
     }
 
     public ORC getCommonOrder() {
-        return CommonOrder;
+        return commonOrder;
     }
 
     public void setCommonOrder(ORC commonOrder) {
-        CommonOrder = commonOrder;
+        this.commonOrder = commonOrder;
+    }
+
+    public PRT getParticipationInformation1() {
+        return participationInformation1;
+    }
+
+    public void setParticipationInformation1(PRT participationInformation1) {
+        this.participationInformation1 = participationInformation1;
     }
 
     public TQ1 getTimingQuantity() {
-        return TimingQuantity;
+        return timingQuantity;
     }
 
     public void setTimingQuantity(TQ1 timingQuantity) {
-        TimingQuantity = timingQuantity;
+        this.timingQuantity = timingQuantity;
     }
 
     public TQ2 getTimingQuantityRelationship() {
-        return TimingQuantityRelationship;
+        return timingQuantityRelationship;
     }
 
     public void setTimingQuantityRelationship(TQ2 timingQuantityRelationship) {
-        TimingQuantityRelationship = timingQuantityRelationship;
+        this.timingQuantityRelationship = timingQuantityRelationship;
     }
 
     public RXA getPharmacyTreatmentAdministration() {
-        return PharmacyTreatmentAdministration;
+        return pharmacyTreatmentAdministration;
     }
 
     public void setPharmacyTreatmentAdministration(RXA pharmacyTreatmentAdministration) {
-        PharmacyTreatmentAdministration = pharmacyTreatmentAdministration;
+        this.pharmacyTreatmentAdministration = pharmacyTreatmentAdministration;
     }
 
     public RXR getPharmacyTreatmentRoute() {
-        return PharmacyTreatmentRoute;
+        return pharmacyTreatmentRoute;
     }
 
     public void setPharmacyTreatmentRoute(RXR pharmacyTreatmentRoute) {
-        PharmacyTreatmentRoute = pharmacyTreatmentRoute;
+        this.pharmacyTreatmentRoute = pharmacyTreatmentRoute;
     }
 
+    public OBX getObservationResult1() {
+        return observationResult1;
+    }
+
+    public void setObservationResult1(OBX observationResult1) {
+        this.observationResult1 = observationResult1;
+    }
+
+    public PRT getParticipationInformation2() {
+        return participationInformation2;
+    }
+
+    public void setParticipationInformation2(PRT participationInformation2) {
+        this.participationInformation2 = participationInformation2;
+    }
+
+    public NTE getNotesandComments2() {
+        return notesandComments2;
+    }
+
+    public void setNotesandComments2(NTE notesandComments2) {
+        this.notesandComments2 = notesandComments2;
+    }
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
+    }
 }

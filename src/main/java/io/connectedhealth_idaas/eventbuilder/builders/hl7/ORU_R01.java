@@ -3,311 +3,311 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class ORU_R01 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public PID PatientIdentification;
-public PD1 PatientAdditionalDemographic;
-public PRT ParticipationInformation;
-public NTE NotesandComments;
-public NK1 NextofKinAssociatedParties;
-public ARV AccessRestriction;
-public OBX ObservationResult;
-public PRT ParticipationInformation1;
-public PV1 PatientVisit;
-public PV2 PatientVisitAdditionalInformation;
-public PRT ParticipationInformation2;
-public ORC CommonOrder;
-public PRT ParticipationInformation3;
-public OBX ObservationResult1;
-public PRT ParticipationInformation4;
-public TXA TranscriptionDocumentHeader;
-public OBR ObservationRequest;
-public NTE NotesandComments2;
-public PRT ParticipationInformation5;
-public TQ1 TimingQuantity;
-public TQ2 TimingQuantityRelationship;
-public CTD ContactData;
-public OBX ObservationResult2;
-public PRT ParticipationInformation6;
-public NTE NotesandComments3;
-public FT1 FinancialTransaction;
-public CTI ClinicalTrialIdentification;
-public SPM Specimen;
-public OBX ObservationResult3;
-public PRT ParticipationInformation7;
-public DSC ContinuationPointer;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private PID patientIdentification;
+    private PD1 patientAdditionalDemographic;
+    private PRT participationInformation;
+    private NTE notesandComments;
+    private NK1 nextofKinAssociatedParties;
+    private ARV accessRestriction;
+    private OBX observationResult;
+    private PRT participationInformation1;
+    private PV1 patientVisit;
+    private PV2 patientVisitAdditionalInformation;
+    private PRT participationInformation2;
+    private ORC commonOrder;
+    private PRT participationInformation3;
+    private OBX observationResult1;
+    private PRT participationInformation4;
+    private TXA transcriptionDocumentHeader;
+    private OBR observationRequest;
+    private NTE notesandComments1;
+    private PRT participationInformation5;
+    private TQ1 timingQuantity;
+    private TQ2 timingQuantityRelationship;
+    private CTD contactData;
+    private OBX observationResult2;
+    private PRT participationInformation6;
+    private NTE notesandComments2;
+    private FT1 financialTransaction;
+    private CTI clinicalTrialIdentification;
+    private SPM specimen;
+    private OBX observationResult3;
+    private PRT participationInformation7;
+    private DSC continuationPointer;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public PID getPatientIdentification() {
-        return PatientIdentification;
+        return patientIdentification;
     }
 
     public void setPatientIdentification(PID patientIdentification) {
-        PatientIdentification = patientIdentification;
+        this.patientIdentification = patientIdentification;
     }
 
     public PD1 getPatientAdditionalDemographic() {
-        return PatientAdditionalDemographic;
+        return patientAdditionalDemographic;
     }
 
     public void setPatientAdditionalDemographic(PD1 patientAdditionalDemographic) {
-        PatientAdditionalDemographic = patientAdditionalDemographic;
+        this.patientAdditionalDemographic = patientAdditionalDemographic;
     }
 
     public PRT getParticipationInformation() {
-        return ParticipationInformation;
+        return participationInformation;
     }
 
     public void setParticipationInformation(PRT participationInformation) {
-        ParticipationInformation = participationInformation;
+        this.participationInformation = participationInformation;
     }
 
     public NTE getNotesandComments() {
-        return NotesandComments;
+        return notesandComments;
     }
 
     public void setNotesandComments(NTE notesandComments) {
-        NotesandComments = notesandComments;
+        this.notesandComments = notesandComments;
     }
 
     public NK1 getNextofKinAssociatedParties() {
-        return NextofKinAssociatedParties;
+        return nextofKinAssociatedParties;
     }
 
     public void setNextofKinAssociatedParties(NK1 nextofKinAssociatedParties) {
-        NextofKinAssociatedParties = nextofKinAssociatedParties;
+        this.nextofKinAssociatedParties = nextofKinAssociatedParties;
     }
 
     public ARV getAccessRestriction() {
-        return AccessRestriction;
+        return accessRestriction;
     }
 
     public void setAccessRestriction(ARV accessRestriction) {
-        AccessRestriction = accessRestriction;
+        this.accessRestriction = accessRestriction;
     }
 
     public OBX getObservationResult() {
-        return ObservationResult;
+        return observationResult;
     }
 
     public void setObservationResult(OBX observationResult) {
-        ObservationResult = observationResult;
+        this.observationResult = observationResult;
     }
 
     public PRT getParticipationInformation1() {
-        return ParticipationInformation1;
+        return participationInformation1;
     }
 
     public void setParticipationInformation1(PRT participationInformation1) {
-        ParticipationInformation1 = participationInformation1;
+        this.participationInformation1 = participationInformation1;
     }
 
     public PV1 getPatientVisit() {
-        return PatientVisit;
+        return patientVisit;
     }
 
     public void setPatientVisit(PV1 patientVisit) {
-        PatientVisit = patientVisit;
+        this.patientVisit = patientVisit;
     }
 
     public PV2 getPatientVisitAdditionalInformation() {
-        return PatientVisitAdditionalInformation;
+        return patientVisitAdditionalInformation;
     }
 
     public void setPatientVisitAdditionalInformation(PV2 patientVisitAdditionalInformation) {
-        PatientVisitAdditionalInformation = patientVisitAdditionalInformation;
+        this.patientVisitAdditionalInformation = patientVisitAdditionalInformation;
     }
 
     public PRT getParticipationInformation2() {
-        return ParticipationInformation2;
+        return participationInformation2;
     }
 
     public void setParticipationInformation2(PRT participationInformation2) {
-        ParticipationInformation2 = participationInformation2;
+        this.participationInformation2 = participationInformation2;
     }
 
     public ORC getCommonOrder() {
-        return CommonOrder;
+        return commonOrder;
     }
 
     public void setCommonOrder(ORC commonOrder) {
-        CommonOrder = commonOrder;
+        this.commonOrder = commonOrder;
     }
 
     public PRT getParticipationInformation3() {
-        return ParticipationInformation3;
+        return participationInformation3;
     }
 
     public void setParticipationInformation3(PRT participationInformation3) {
-        ParticipationInformation3 = participationInformation3;
+        this.participationInformation3 = participationInformation3;
     }
 
     public OBX getObservationResult1() {
-        return ObservationResult1;
+        return observationResult1;
     }
 
     public void setObservationResult1(OBX observationResult1) {
-        ObservationResult1 = observationResult1;
+        this.observationResult1 = observationResult1;
     }
 
     public PRT getParticipationInformation4() {
-        return ParticipationInformation4;
+        return participationInformation4;
     }
 
     public void setParticipationInformation4(PRT participationInformation4) {
-        ParticipationInformation4 = participationInformation4;
+        this.participationInformation4 = participationInformation4;
     }
 
     public TXA getTranscriptionDocumentHeader() {
-        return TranscriptionDocumentHeader;
+        return transcriptionDocumentHeader;
     }
 
     public void setTranscriptionDocumentHeader(TXA transcriptionDocumentHeader) {
-        TranscriptionDocumentHeader = transcriptionDocumentHeader;
+        this.transcriptionDocumentHeader = transcriptionDocumentHeader;
     }
 
     public OBR getObservationRequest() {
-        return ObservationRequest;
+        return observationRequest;
     }
 
     public void setObservationRequest(OBR observationRequest) {
-        ObservationRequest = observationRequest;
+        this.observationRequest = observationRequest;
     }
 
-    public NTE getNotesandComments2() {
-        return NotesandComments2;
+    public NTE getNotesandComments1() {
+        return notesandComments1;
     }
 
-    public void setNotesandComments2(NTE notesandComments2) {
-        NotesandComments2 = notesandComments2;
+    public void setNotesandComments1(NTE notesandComments1) {
+        this.notesandComments1 = notesandComments1;
     }
 
     public PRT getParticipationInformation5() {
-        return ParticipationInformation5;
+        return participationInformation5;
     }
 
     public void setParticipationInformation5(PRT participationInformation5) {
-        ParticipationInformation5 = participationInformation5;
+        this.participationInformation5 = participationInformation5;
     }
 
     public TQ1 getTimingQuantity() {
-        return TimingQuantity;
+        return timingQuantity;
     }
 
     public void setTimingQuantity(TQ1 timingQuantity) {
-        TimingQuantity = timingQuantity;
+        this.timingQuantity = timingQuantity;
     }
 
     public TQ2 getTimingQuantityRelationship() {
-        return TimingQuantityRelationship;
+        return timingQuantityRelationship;
     }
 
     public void setTimingQuantityRelationship(TQ2 timingQuantityRelationship) {
-        TimingQuantityRelationship = timingQuantityRelationship;
+        this.timingQuantityRelationship = timingQuantityRelationship;
     }
 
     public CTD getContactData() {
-        return ContactData;
+        return contactData;
     }
 
     public void setContactData(CTD contactData) {
-        ContactData = contactData;
+        this.contactData = contactData;
     }
 
     public OBX getObservationResult2() {
-        return ObservationResult2;
+        return observationResult2;
     }
 
     public void setObservationResult2(OBX observationResult2) {
-        ObservationResult2 = observationResult2;
+        this.observationResult2 = observationResult2;
     }
 
     public PRT getParticipationInformation6() {
-        return ParticipationInformation6;
+        return participationInformation6;
     }
 
     public void setParticipationInformation6(PRT participationInformation6) {
-        ParticipationInformation6 = participationInformation6;
+        this.participationInformation6 = participationInformation6;
     }
 
-    public NTE getNotesandComments3() {
-        return NotesandComments3;
+    public NTE getNotesandComments2() {
+        return notesandComments2;
     }
 
-    public void setNotesandComments3(NTE notesandComments3) {
-        NotesandComments3 = notesandComments3;
+    public void setNotesandComments2(NTE notesandComments2) {
+        this.notesandComments2 = notesandComments2;
     }
 
     public FT1 getFinancialTransaction() {
-        return FinancialTransaction;
+        return financialTransaction;
     }
 
     public void setFinancialTransaction(FT1 financialTransaction) {
-        FinancialTransaction = financialTransaction;
+        this.financialTransaction = financialTransaction;
     }
 
     public CTI getClinicalTrialIdentification() {
-        return ClinicalTrialIdentification;
+        return clinicalTrialIdentification;
     }
 
     public void setClinicalTrialIdentification(CTI clinicalTrialIdentification) {
-        ClinicalTrialIdentification = clinicalTrialIdentification;
+        this.clinicalTrialIdentification = clinicalTrialIdentification;
     }
 
     public SPM getSpecimen() {
-        return Specimen;
+        return specimen;
     }
 
     public void setSpecimen(SPM specimen) {
-        Specimen = specimen;
+        this.specimen = specimen;
     }
 
     public OBX getObservationResult3() {
-        return ObservationResult3;
+        return observationResult3;
     }
 
     public void setObservationResult3(OBX observationResult3) {
-        ObservationResult3 = observationResult3;
+        this.observationResult3 = observationResult3;
     }
 
     public PRT getParticipationInformation7() {
-        return ParticipationInformation7;
+        return participationInformation7;
     }
 
     public void setParticipationInformation7(PRT participationInformation7) {
-        ParticipationInformation7 = participationInformation7;
+        this.participationInformation7 = participationInformation7;
     }
 
     public DSC getContinuationPointer() {
-        return ContinuationPointer;
+        return continuationPointer;
     }
 
     public void setContinuationPointer(DSC continuationPointer) {
-        ContinuationPointer = continuationPointer;
+        this.continuationPointer = continuationPointer;
     }
 
     public String toString() {

@@ -3,95 +3,95 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class MFN_M04 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public MFI MasterFileIdentification;
-public NTE NotesandComments;
-public MFE MasterFileEntry;
-public NTE NotesandComments1;
-public CDM ChargeDescriptionMaster;
-public NTE NotesandComments2;
-public PRC Pricing;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private MFI masterFileIdentification;
+    private NTE notesandComments;
+    private MFE masterFileEntry;
+    private NTE notesandComments1;
+    private CDM chargeDescriptionMaster;
+    private NTE notesandComments2;
+    private PRC pricing;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public MFI getMasterFileIdentification() {
-        return MasterFileIdentification;
+        return masterFileIdentification;
     }
 
     public void setMasterFileIdentification(MFI masterFileIdentification) {
-        MasterFileIdentification = masterFileIdentification;
+        this.masterFileIdentification = masterFileIdentification;
     }
 
     public NTE getNotesandComments() {
-        return NotesandComments;
+        return notesandComments;
     }
 
     public void setNotesandComments(NTE notesandComments) {
-        NotesandComments = notesandComments;
+        this.notesandComments = notesandComments;
     }
 
     public MFE getMasterFileEntry() {
-        return MasterFileEntry;
+        return masterFileEntry;
     }
 
     public void setMasterFileEntry(MFE masterFileEntry) {
-        MasterFileEntry = masterFileEntry;
+        this.masterFileEntry = masterFileEntry;
     }
 
     public NTE getNotesandComments1() {
-        return NotesandComments1;
+        return notesandComments1;
     }
 
     public void setNotesandComments1(NTE notesandComments1) {
-        NotesandComments1 = notesandComments1;
+        this.notesandComments1 = notesandComments1;
     }
 
     public CDM getChargeDescriptionMaster() {
-        return ChargeDescriptionMaster;
+        return chargeDescriptionMaster;
     }
 
     public void setChargeDescriptionMaster(CDM chargeDescriptionMaster) {
-        ChargeDescriptionMaster = chargeDescriptionMaster;
+        this.chargeDescriptionMaster = chargeDescriptionMaster;
     }
 
     public NTE getNotesandComments2() {
-        return NotesandComments2;
+        return notesandComments2;
     }
 
     public void setNotesandComments2(NTE notesandComments2) {
-        NotesandComments2 = notesandComments2;
+        this.notesandComments2 = notesandComments2;
     }
 
     public PRC getPricing() {
-        return Pricing;
+        return pricing;
     }
 
     public void setPricing(PRC pricing) {
-        Pricing = pricing;
+        this.pricing = pricing;
     }
 
     public String toString() {

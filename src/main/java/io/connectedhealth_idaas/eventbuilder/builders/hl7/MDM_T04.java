@@ -3,140 +3,140 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class MDM_T04 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public EVN EventType;
-public PID PatientIdentification;
-public PV1 PatientVisit;
-public ORC CommonOrder;
-public TQ1 TimingQuantity;
-public TQ2 TimingQuantityRelationship;
-public OBR ObservationRequest;
-public NTE NotesandComments;
-public TXA TranscriptionDocumentHeader;
-public CON ConsentSegment;
-public OBX ObservationResult;
-public NTE NotesandComments1;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private EVN eventType;
+    private PID patientIdentification;
+    private PV1 patientVisit;
+    private ORC commonOrder;
+    private TQ1 timingQuantity;
+    private TQ2 timingQuantityRelationship;
+    private OBR observationRequest;
+    private NTE notesandComments;
+    private TXA transcriptionDocumentHeader;
+    private CON consentSegment;
+    private OBX observationResult;
+    private NTE notesandComments1;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public EVN getEventType() {
-        return EventType;
+        return eventType;
     }
 
     public void setEventType(EVN eventType) {
-        EventType = eventType;
+        this.eventType = eventType;
     }
 
     public PID getPatientIdentification() {
-        return PatientIdentification;
+        return patientIdentification;
     }
 
     public void setPatientIdentification(PID patientIdentification) {
-        PatientIdentification = patientIdentification;
+        this.patientIdentification = patientIdentification;
     }
 
     public PV1 getPatientVisit() {
-        return PatientVisit;
+        return patientVisit;
     }
 
     public void setPatientVisit(PV1 patientVisit) {
-        PatientVisit = patientVisit;
+        this.patientVisit = patientVisit;
     }
 
     public ORC getCommonOrder() {
-        return CommonOrder;
+        return commonOrder;
     }
 
     public void setCommonOrder(ORC commonOrder) {
-        CommonOrder = commonOrder;
+        this.commonOrder = commonOrder;
     }
 
     public TQ1 getTimingQuantity() {
-        return TimingQuantity;
+        return timingQuantity;
     }
 
     public void setTimingQuantity(TQ1 timingQuantity) {
-        TimingQuantity = timingQuantity;
+        this.timingQuantity = timingQuantity;
     }
 
     public TQ2 getTimingQuantityRelationship() {
-        return TimingQuantityRelationship;
+        return timingQuantityRelationship;
     }
 
     public void setTimingQuantityRelationship(TQ2 timingQuantityRelationship) {
-        TimingQuantityRelationship = timingQuantityRelationship;
+        this.timingQuantityRelationship = timingQuantityRelationship;
     }
 
     public OBR getObservationRequest() {
-        return ObservationRequest;
+        return observationRequest;
     }
 
     public void setObservationRequest(OBR observationRequest) {
-        ObservationRequest = observationRequest;
+        this.observationRequest = observationRequest;
     }
 
     public NTE getNotesandComments() {
-        return NotesandComments;
+        return notesandComments;
     }
 
     public void setNotesandComments(NTE notesandComments) {
-        NotesandComments = notesandComments;
+        this.notesandComments = notesandComments;
     }
 
     public TXA getTranscriptionDocumentHeader() {
-        return TranscriptionDocumentHeader;
+        return transcriptionDocumentHeader;
     }
 
     public void setTranscriptionDocumentHeader(TXA transcriptionDocumentHeader) {
-        TranscriptionDocumentHeader = transcriptionDocumentHeader;
+        this.transcriptionDocumentHeader = transcriptionDocumentHeader;
     }
 
     public CON getConsentSegment() {
-        return ConsentSegment;
+        return consentSegment;
     }
 
     public void setConsentSegment(CON consentSegment) {
-        ConsentSegment = consentSegment;
+        this.consentSegment = consentSegment;
     }
 
     public OBX getObservationResult() {
-        return ObservationResult;
+        return observationResult;
     }
 
     public void setObservationResult(OBX observationResult) {
-        ObservationResult = observationResult;
+        this.observationResult = observationResult;
     }
 
     public NTE getNotesandComments1() {
-        return NotesandComments1;
+        return notesandComments1;
     }
 
     public void setNotesandComments1(NTE notesandComments1) {
-        NotesandComments1 = notesandComments1;
+        this.notesandComments1 = notesandComments1;
     }
 
     public String toString() {

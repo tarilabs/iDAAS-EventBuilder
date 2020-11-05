@@ -3,140 +3,140 @@ import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class ADT_A02 {
-public MSH MessageHeader;
-public SFT SoftwareSegment;
-public UAC UserAuthenticationCredentialSegment;
-public EVN EventType;
-public PID PatientIdentification;
-public PD1 PatientAdditionalDemographic;
-public ARV AccessRestriction;
-public ROL Role;
-public PV1 PatientVisit;
-public PV2 PatientVisitAdditionalInformation;
-public ARV AccessRestriction1;
-public ROL Role1;
-public DB1 Disability;
-public OBX ObservationResult;
-public PDA PatientDeathandAutopsy;
+    private MSH messageHeader;
+    private SFT softwareSegment;
+    private UAC userAuthenticationCredentialSegment;
+    private EVN eventType;
+    private PID patientIdentification;
+    private PD1 patientAdditionalDemographic;
+    private ARV accessRestriction;
+    private ROL role;
+    private PV1 patientVisit;
+    private PV2 patientVisitAdditionalInformation;
+    private ARV accessRestriction1;
+    private ROL role1;
+    private DB1 disability;
+    private OBX observationResult;
+    private PDA patientDeathandAutopsy;
 
     public MSH getMessageHeader() {
-        return MessageHeader;
+        return messageHeader;
     }
 
     public void setMessageHeader(MSH messageHeader) {
-        MessageHeader = messageHeader;
+        this.messageHeader = messageHeader;
     }
 
     public SFT getSoftwareSegment() {
-        return SoftwareSegment;
+        return softwareSegment;
     }
 
     public void setSoftwareSegment(SFT softwareSegment) {
-        SoftwareSegment = softwareSegment;
+        this.softwareSegment = softwareSegment;
     }
 
     public UAC getUserAuthenticationCredentialSegment() {
-        return UserAuthenticationCredentialSegment;
+        return userAuthenticationCredentialSegment;
     }
 
     public void setUserAuthenticationCredentialSegment(UAC userAuthenticationCredentialSegment) {
-        UserAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
+        this.userAuthenticationCredentialSegment = userAuthenticationCredentialSegment;
     }
 
     public EVN getEventType() {
-        return EventType;
+        return eventType;
     }
 
     public void setEventType(EVN eventType) {
-        EventType = eventType;
+        this.eventType = eventType;
     }
 
     public PID getPatientIdentification() {
-        return PatientIdentification;
+        return patientIdentification;
     }
 
     public void setPatientIdentification(PID patientIdentification) {
-        PatientIdentification = patientIdentification;
+        this.patientIdentification = patientIdentification;
     }
 
     public PD1 getPatientAdditionalDemographic() {
-        return PatientAdditionalDemographic;
+        return patientAdditionalDemographic;
     }
 
     public void setPatientAdditionalDemographic(PD1 patientAdditionalDemographic) {
-        PatientAdditionalDemographic = patientAdditionalDemographic;
+        this.patientAdditionalDemographic = patientAdditionalDemographic;
     }
 
     public ARV getAccessRestriction() {
-        return AccessRestriction;
+        return accessRestriction;
     }
 
     public void setAccessRestriction(ARV accessRestriction) {
-        AccessRestriction = accessRestriction;
+        this.accessRestriction = accessRestriction;
     }
 
     public ROL getRole() {
-        return Role;
+        return role;
     }
 
     public void setRole(ROL role) {
-        Role = role;
+        this.role = role;
     }
 
     public PV1 getPatientVisit() {
-        return PatientVisit;
+        return patientVisit;
     }
 
     public void setPatientVisit(PV1 patientVisit) {
-        PatientVisit = patientVisit;
+        this.patientVisit = patientVisit;
     }
 
     public PV2 getPatientVisitAdditionalInformation() {
-        return PatientVisitAdditionalInformation;
+        return patientVisitAdditionalInformation;
     }
 
     public void setPatientVisitAdditionalInformation(PV2 patientVisitAdditionalInformation) {
-        PatientVisitAdditionalInformation = patientVisitAdditionalInformation;
+        this.patientVisitAdditionalInformation = patientVisitAdditionalInformation;
     }
 
     public ARV getAccessRestriction1() {
-        return AccessRestriction1;
+        return accessRestriction1;
     }
 
     public void setAccessRestriction1(ARV accessRestriction1) {
-        AccessRestriction1 = accessRestriction1;
+        this.accessRestriction1 = accessRestriction1;
     }
 
     public ROL getRole1() {
-        return Role1;
+        return role1;
     }
 
     public void setRole1(ROL role1) {
-        Role1 = role1;
+        this.role1 = role1;
     }
 
     public DB1 getDisability() {
-        return Disability;
+        return disability;
     }
 
     public void setDisability(DB1 disability) {
-        Disability = disability;
+        this.disability = disability;
     }
 
     public OBX getObservationResult() {
-        return ObservationResult;
+        return observationResult;
     }
 
     public void setObservationResult(OBX observationResult) {
-        ObservationResult = observationResult;
+        this.observationResult = observationResult;
     }
 
     public PDA getPatientDeathandAutopsy() {
-        return PatientDeathandAutopsy;
+        return patientDeathandAutopsy;
     }
 
     public void setPatientDeathandAutopsy(PDA patientDeathandAutopsy) {
-        PatientDeathandAutopsy = patientDeathandAutopsy;
+        this.patientDeathandAutopsy = patientDeathandAutopsy;
     }
 
     public String toString() {
