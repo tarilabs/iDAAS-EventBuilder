@@ -28,6 +28,20 @@ public class MSH {
     private String MSH_23_ReceivingResponsibleOrganization;
     private String MSH_24_SendingNetworkAddress;
     private String MSH_25_ReceivingNetworkAddress;
+    private String buildSegment;
+
+    public void setBuildSegment(MSH MessageHeader, String hl7Version, String fieldDelimiter) {
+        String buildSegment = null;
+        if (hl7Version.equals("2.5.1"))
+        {
+            buildSegment = "MSH"+MSH_1_FieldSeparator+MSH_2_EncodingCharacters+fieldDelimiter+
+                    MSH_3_SendingApplication+fieldDelimiter+MSH_4_SendingFacility+fieldDelimiter+MSH_5_ReceivingApplication+
+                    fieldDelimiter+MSH_6_ReceivingFacility+fieldDelimiter+MSH_7_DateTimeofMessage+fieldDelimiter+
+                    MSH_8_Security+fieldDelimiter+MSH_9_MessageType+fieldDelimiter+MSH_10_MessageControlID+fieldDelimiter+
+                    MSH_11_ProcessingID+fieldDelimiter;
+        }
+        this.buildSegment = buildSegment;
+    }
 
     public String getMSH_1_FieldSeparator() {
         return this.MSH_1_FieldSeparator;
