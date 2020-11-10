@@ -30,17 +30,21 @@ public class MSH {
     private String MSH_25_ReceivingNetworkAddress;
     private String buildSegment;
 
+    public void setBuildSegment(String buildSegment) {
+        this.buildSegment = buildSegment;
+    }
+
     public void setBuildSegment(MSH MessageHeader, String hl7Version, String fieldDelimiter) {
-        String buildSegment = null;
+        StringBuilder builder = new StringBuilder();
         if (hl7Version.equals("2.5.1"))
         {
-            buildSegment = "MSH"+MSH_1_FieldSeparator+MSH_2_EncodingCharacters+fieldDelimiter+
-                    MSH_3_SendingApplication+fieldDelimiter+MSH_4_SendingFacility+fieldDelimiter+MSH_5_ReceivingApplication+
-                    fieldDelimiter+MSH_6_ReceivingFacility+fieldDelimiter+MSH_7_DateTimeofMessage+fieldDelimiter+
-                    MSH_8_Security+fieldDelimiter+MSH_9_MessageType+fieldDelimiter+MSH_10_MessageControlID+fieldDelimiter+
-                    MSH_11_ProcessingID+fieldDelimiter;
+            builder.append("MSH").append(MSH_1_FieldSeparator).append(MSH_2_EncodingCharacters).append(fieldDelimiter)
+                        .append(MSH_3_SendingApplication).append(fieldDelimiter).append(MSH_4_SendingFacility).append(fieldDelimiter).append(MSH_5_ReceivingApplication)
+                        .append(fieldDelimiter).append(MSH_6_ReceivingFacility).append(fieldDelimiter).append(MSH_7_DateTimeofMessage).append(fieldDelimiter)
+                        .append(MSH_8_Security).append(fieldDelimiter).append(MSH_9_MessageType).append(fieldDelimiter).append(MSH_10_MessageControlID).append(fieldDelimiter)
+                        .append(MSH_11_ProcessingID).append(fieldDelimiter);
         }
-        this.buildSegment = buildSegment;
+        this.buildSegment = builder.toString();
     }
 
     public String getMSH_1_FieldSeparator() {
