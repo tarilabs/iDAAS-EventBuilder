@@ -30,19 +30,22 @@ public class MSH {
     private String MSH_25_ReceivingNetworkAddress;
     private String buildSegment;
 
-    public void setBuildSegment(String buildSegment) {
-        this.buildSegment = buildSegment;
+    public String getBuildSegment() {
+        return this.buildSegment;
     }
 
-    public void setBuildSegment(MSH MessageHeader, String hl7Version, String fieldDelimiter) {
+    public void setBuildSegment(MSH messageHeader, HL7Versions hl7Version, String fieldDelimiter) {
         StringBuilder builder = new StringBuilder();
-        if (hl7Version.equals("2.5.1"))
+        switch (hl7Version)
         {
-            builder.append("MSH").append(MSH_1_FieldSeparator).append(MSH_2_EncodingCharacters).append(fieldDelimiter)
-                        .append(MSH_3_SendingApplication).append(fieldDelimiter).append(MSH_4_SendingFacility).append(fieldDelimiter).append(MSH_5_ReceivingApplication)
-                        .append(fieldDelimiter).append(MSH_6_ReceivingFacility).append(fieldDelimiter).append(MSH_7_DateTimeofMessage).append(fieldDelimiter)
-                        .append(MSH_8_Security).append(fieldDelimiter).append(MSH_9_MessageType).append(fieldDelimiter).append(MSH_10_MessageControlID).append(fieldDelimiter)
-                        .append(MSH_11_ProcessingID).append(fieldDelimiter);
+            case VERSION_2_5_1: {
+                builder.append("MSH").append(MSH_1_FieldSeparator).append(MSH_2_EncodingCharacters).append(fieldDelimiter)
+                            .append(MSH_3_SendingApplication).append(fieldDelimiter).append(MSH_4_SendingFacility).append(fieldDelimiter).append(MSH_5_ReceivingApplication)
+                            .append(fieldDelimiter).append(MSH_6_ReceivingFacility).append(fieldDelimiter).append(MSH_7_DateTimeofMessage).append(fieldDelimiter)
+                            .append(MSH_8_Security).append(fieldDelimiter).append(MSH_9_MessageType).append(fieldDelimiter).append(MSH_10_MessageControlID).append(fieldDelimiter)
+                            .append(MSH_11_ProcessingID).append(fieldDelimiter);
+            }
+            break;
         }
         this.buildSegment = builder.toString();
     }
