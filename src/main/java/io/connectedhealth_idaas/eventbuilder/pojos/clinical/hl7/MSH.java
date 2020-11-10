@@ -1,5 +1,6 @@
 package io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7;
 
+import io.connectedhealth_idaas.eventbuilder.common.hl7.HL7Versions;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class MSH {
@@ -28,26 +29,22 @@ public class MSH {
     private String MSH_23_ReceivingResponsibleOrganization;
     private String MSH_24_SendingNetworkAddress;
     private String MSH_25_ReceivingNetworkAddress;
-    private String buildSegment;
 
-    public String getBuildSegment() {
-        return this.buildSegment;
-    }
-
-    public void setBuildSegment(MSH messageHeader, HL7Versions hl7Version, String fieldDelimiter) {
+    public String buildSegment(HL7Versions hl7Version) {
         StringBuilder builder = new StringBuilder();
+
         switch (hl7Version)
         {
             case VERSION_2_5_1: {
-                builder.append("MSH").append(MSH_1_FieldSeparator).append(MSH_2_EncodingCharacters).append(fieldDelimiter)
-                            .append(MSH_3_SendingApplication).append(fieldDelimiter).append(MSH_4_SendingFacility).append(fieldDelimiter).append(MSH_5_ReceivingApplication)
-                            .append(fieldDelimiter).append(MSH_6_ReceivingFacility).append(fieldDelimiter).append(MSH_7_DateTimeofMessage).append(fieldDelimiter)
-                            .append(MSH_8_Security).append(fieldDelimiter).append(MSH_9_MessageType).append(fieldDelimiter).append(MSH_10_MessageControlID).append(fieldDelimiter)
-                            .append(MSH_11_ProcessingID).append(fieldDelimiter);
+                builder.append("MSH").append(MSH_1_FieldSeparator).append(MSH_2_EncodingCharacters).append(MSH_1_FieldSeparator)
+                            .append(MSH_3_SendingApplication).append(MSH_1_FieldSeparator).append(MSH_4_SendingFacility).append(MSH_1_FieldSeparator).append(MSH_5_ReceivingApplication)
+                            .append(MSH_1_FieldSeparator).append(MSH_6_ReceivingFacility).append(MSH_1_FieldSeparator).append(MSH_7_DateTimeofMessage).append(MSH_1_FieldSeparator)
+                            .append(MSH_8_Security).append(MSH_1_FieldSeparator).append(MSH_9_MessageType).append(MSH_1_FieldSeparator).append(MSH_10_MessageControlID).append(MSH_1_FieldSeparator)
+                            .append(MSH_11_ProcessingID).append(MSH_1_FieldSeparator);
             }
             break;
         }
-        this.buildSegment = builder.toString();
+        return builder.toString();
     }
 
     public String getMSH_1_FieldSeparator() {

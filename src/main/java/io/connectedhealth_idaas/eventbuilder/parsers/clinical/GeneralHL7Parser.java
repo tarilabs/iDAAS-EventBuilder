@@ -1,5 +1,6 @@
 package io.connectedhealth_idaas.eventbuilder.parsers.clinical;
 
+import io.connectedhealth_idaas.eventbuilder.common.hl7.SegmentConstants;
 import io.connectedhealth_idaas.eventbuilder.pojos.platform.HL7MessageDelimiters;
 
 /**
@@ -18,7 +19,7 @@ public class GeneralHL7Parser {
 		HL7MessageDelimiters mshDelimiterDetails = new HL7MessageDelimiters();
 		
 		//Parse Message and build events
-		String[] messageSegments = msgBody.split(SegmentConstants.DEFAULT_SEGMENT_DELIMITER); 
+		String[] messageSegments = msgBody.split(SegmentConstants.DEFAULT_SEGMENT_DELIMITER);
 		// System.out.println("Segment Count: " +messageSegments.length);
 		 
 		for (String segmentDetails : messageSegments) 

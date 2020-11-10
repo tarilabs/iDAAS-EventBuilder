@@ -1,5 +1,6 @@
 package io.connectedhealth_idaas.eventbuilder.parsers.clinical;
 
+import io.connectedhealth_idaas.eventbuilder.common.hl7.SegmentConstants;
 import io.connectedhealth_idaas.eventbuilder.events.clinical.SepsisEvent;
 
 public class HL7SepsisEventParser {
