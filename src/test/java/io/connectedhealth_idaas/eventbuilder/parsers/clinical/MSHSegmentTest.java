@@ -3,10 +3,12 @@ package io.connectedhealth_idaas.eventbuilder.parsers.clinical;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-import io.connectedhealth_idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
-//import io.connectedhealth_idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
-
 import org.junit.jupiter.api.Test;
+
+import io.connectedhealth_idaas.eventbuilder.common.hl7.Hl7SegmentBuilder;
+import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.EVN;
+import io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7.MSH;
+import io.connectedhealth_idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
 
 public class MSHSegmentTest {
 
@@ -36,5 +38,32 @@ public class MSHSegmentTest {
         assertEquals("2.2", mshSegmentDetails.getMessageVersion());
         assertEquals("HIS", mshSegmentDetails.getSendingApp());
         assertEquals("RIH_HIS_ADT_ADT.1.2.3.4.5", mshSegmentDetails.getUniqueMessageId());
+    }
+
+    @Test
+    public void buildMSHSegment() {
+        MSH msh = new MSH();
+        msh.setMSH_1_FieldSeparator("|");
+        msh.setMSH_2_EncodingCharacters("MSH_2_EncodingCharacters");
+        msh.setMSH_3_SendingApplication("MSH_3_SendingApplication");
+        msh.setMSH_4_SendingFacility("MSH_4_SendingFacility");
+
+        String segment = Hl7SegmentBuilder.buildSegment(msh, 2, 4, "|");
+        assertEquals("MSH|MSH_2_EncodingCharacters|MSH_3_SendingApplication|MSH_4_SendingFacility|", segment);
+    }
+    
+    @Test
+    public void buildEVNSegment() {
+        EVN evn = new EVN();
+        evn.setEVN_1_EventTypeCode("EVN_1_EventTypeCode");
+        evn.setEVN_2_RecordedDateTime("EVN_2_RecordedDateTime");;
+        evn.setEVN_3_DateTimePlannedEvent("EVN_3_DateTimePlannedEvent");
+        evn.setEVN_4_EventReasonCode("EVN_4_EventReasonCode");
+        evn.setEVN_5_OperatorID("EVN_5_OperatorID");
+        evn.setEVN_6_EventOccurred("EVN_6_EventOccurred");
+        evn.setEVN_7_EventFacility("EVN_7_EventFacility");
+
+        String segment = Hl7SegmentBuilder.buildSegment(evn, 1, 7, "|");
+        assertEquals("EVN|EVN_1_EventTypeCode|EVN_2_RecordedDateTime|EVN_3_DateTimePlannedEvent|EVN_4_EventReasonCode|EVN_5_OperatorID|EVN_6_EventOccurred|EVN_7_EventFacility|", segment);
     }
 }
