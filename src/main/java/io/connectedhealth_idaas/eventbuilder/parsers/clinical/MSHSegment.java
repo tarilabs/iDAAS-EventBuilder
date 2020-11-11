@@ -1,7 +1,7 @@
 package io.connectedhealth_idaas.eventbuilder.parsers.clinical;
 
 // Event Builder objects
-import io.connectedhealth_idaas.eventbuilder.common.hl7.SegmentConstants;
+import io.connectedhealth_idaas.eventbuilder.common.hl7.HL7SegmentConstants;
 import io.connectedhealth_idaas.eventbuilder.pojos.clinical.legacy.MessageHeader;
 
 /**
@@ -28,9 +28,9 @@ public class MSHSegment {
 		/*
 		 * Parse Message and build events
 		 */
-		String[] messageSegments = msgBody.split(SegmentConstants.DEFAULT_SEGMENT_DELIMITER);
+		String[] messageSegments = msgBody.split(HL7SegmentConstants.DEFAULT_SEGMENT_DELIMITER);
 		for (String segmentData : messageSegments) {
-			if (segmentData.substring(0, 3).equals(SegmentConstants.SEGMENT_TYPE_MSH)) {
+			if (segmentData.substring(0, 3).equals("MSH")) {
 				// Parse MSH and Populating Parsing Variables
 				fieldDelimiter = segmentData.substring(3, 4);
 				componentDelimiter = segmentData.substring(4, 5);

@@ -2,7 +2,7 @@ package io.connectedhealth_idaas.eventbuilder.builders.edi.hipaa;
 import io.connectedhealth_idaas.eventbuilder.pojos.edi.hipaa.*;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class HealthCareServicesReview_278 {
+public class HealthcareServicesReview_278 {
 private ST transactionSetHeader;
 private S4S securityHeaderLevel2;
 private S4A assuranceHeaderLevel2;

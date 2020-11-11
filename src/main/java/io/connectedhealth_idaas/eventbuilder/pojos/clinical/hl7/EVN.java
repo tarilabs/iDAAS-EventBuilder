@@ -28,6 +28,7 @@ public class EVN {
     public String buildSegment(HL7Versions hl7Version) {
         return buildSegment(hl7Version,"|");
     }
+
     public String getEVN_1_EventTypeCode() {
         return this.EVN_1_EventTypeCode;
     }

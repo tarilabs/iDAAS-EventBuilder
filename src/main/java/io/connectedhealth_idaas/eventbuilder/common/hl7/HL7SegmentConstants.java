@@ -5,6 +5,4 @@ public class HL7SegmentConstants {
     public static final String DEFAULT_FIELD_DELIMITER = "|";
     public static final String DEFAULT_SUBFIELD_DELIMITER = "^";
     public static final String DEFAULT_REPEATING_DELIMITER = "~";
-    //public static final String SEGMENT_TYPE_MSH = "MSH";
-    //public static final String SEGMENT_TYPE_PID = "PID";
 }

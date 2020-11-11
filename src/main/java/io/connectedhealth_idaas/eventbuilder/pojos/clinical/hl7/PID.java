@@ -1,5 +1,6 @@
 package io.connectedhealth_idaas.eventbuilder.pojos.clinical.hl7;
 
+import io.connectedhealth_idaas.eventbuilder.common.hl7.HL7Versions;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 public class PID {
@@ -43,6 +44,21 @@ public class PID {
     private String PID_38_ProductionClassCode;
     private String PID_39_TribalCitizenship;
     private String PID_40_PatientTelecommunicationInformation;
+    public String buildSegment(HL7Versions hl7Version, String fieldDelimiter) {
+        StringBuilder builder = new StringBuilder();
+        switch (hl7Version)
+        {
+            case VERSION_2_5_1: {
+                builder.append("PID").append(fieldDelimiter);//.append(EVN_1_EventTypeCode).append(fieldDelimiter).append(EVN_2_RecordedDateTime).append(fieldDelimiter)
+                         //.append(fieldDelimiter).append(EVN_6_EventOccurred).append(fieldDelimiter).append( EVN_7_EventFacility).append(fieldDelimiter);
+            }
+            break;
+        }
+        return builder.toString();
+    }
+    public String buildSegment(HL7Versions hl7Version) {
+        return buildSegment(hl7Version,"|");
+    }
 
     public String getPID_1_SetIDPID() {
         return this.PID_1_SetIDPID;
